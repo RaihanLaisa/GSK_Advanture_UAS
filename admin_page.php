@@ -24,7 +24,7 @@ if(!isset($_SESSION['admin_name'])){
 </head>
 <body>
 <header>
-        <h4>Admin Page - Web Wisata</h4>
+        <h1>Admin Page - Web Wisata</h1>
     </header>
     <nav>
         <a href="#">Beranda</a>
@@ -46,6 +46,27 @@ if(!isset($_SESSION['admin_name'])){
    </div>
 
 </div>
+
+<footer id="contact">
+        <div class="layar-dalam">
+          <div>
+            <h5>Info</h5>
+            Jl. Proklamasi Biologi no. 12
+          </div>
+          <div>
+            <h5>Contact</h5>
+            Kelompok 10, Surabaya, Rungkut
+            ~081249228875
+            ~10Group.com
+          </div>
+          <div>
+            <h5>Connect</h5>
+            Instagram
+          </div>
+        </div>
+        <div class="layar-dalam">
+          <div class="copyright">&copy; 2024 Gresik Discovery</div>
+        </div>
 
 </body>
 </html>
