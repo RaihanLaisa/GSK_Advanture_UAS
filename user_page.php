@@ -23,7 +23,6 @@ if(!isset($_SESSION['user_name'])){
 
 </head>
 <body>
-
 <nav>
       <div class="layar-dalam">
         <div class="logo">
@@ -44,6 +43,7 @@ if(!isset($_SESSION['user_name'])){
             <li><a href="#team">Team</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="logout.php" >logout</a></li>
           </ul>
         </div>
       </div>
