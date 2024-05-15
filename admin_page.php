@@ -39,6 +39,7 @@ if(!isset($_SESSION['admin_name'])){
     </nav>
    
 <div class="container">
+<a href="create_form.php">Tambah Wisata</a>
 
    <div class="content">
     <?php
