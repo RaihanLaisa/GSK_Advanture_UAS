@@ -28,18 +28,26 @@
 
    <div class="destination">
       <h2>Explore Our Destinations</h2>
+      <h2></h2>
       <p>Discover amazing places around Gresik!</p>
       <div>
          <img src="asset/Bukit Kapur Sekapuk.png" />
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit urna quis magna efficitur, sed elementum lacus gravida.</p>
+         <p>Salah satu wilayah di Gresik mempunyai tempat wisata yang instagramable, 
+            yaitu Desa Kapuk. Desa Kapuk adalah sebuah desa kecil yang ada di Kecamatan Ujung Pangkah, 
+            Kabupaten Gresik. Desa Kapuk ini terletak 5km dari arah utara Jawa.</p>
       </div>
       <div>
          <img src="asset/Pantai Delegan.png" />
-         <p>Nulla vel ligula vitae lacus suscipit rutrum nec non enim. Proin vitae orci nec eros cursus scelerisque. </p>
+         <p>Pantai Delegan terletak di Dusun Rejodadi Desa Delegan, Kecamatan Panceng Kabupaten Gresik, 
+            40 km dari pusat kota Gresik dan 60 km dari Surabaya. Perjalanan satu setengah jam 
+            dari Surabaya ke lokasi Pantai Delegan tak terasa karena begitu tiba di lokasi 
+            wisata ini kami disambut dengan pesona alam pantai yang luar biasa.</p>
       </div>
       <div>
         <img src="asset/Wagos Wisata Alam Gosari.png" />
-         <p>Suspendisse potenti. Vivamus id risus vestibulum, porta tortor nec, placerat est. Duis et turpis vitae lectus luctus ultricies.</p>
+         <p>Wisata Alam dan Edukasi Gosari (Wagos) adalah daya tarik wisata baru yang menawarkan 
+            wahana alam khas pedesaan dengan keindahan alam perbukitan kapur yang sangat mempesona. 
+            Keberadaan Kolam Bidadari dan beberapa spot swa foto dan video turut mempercantik wahana wisata ini.</p>
       </div>
    </div>
 </div>
