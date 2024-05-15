@@ -24,13 +24,17 @@ if(!isset($_SESSION['admin_name'])){
 </head>
 <body>
 <header>
-        <h1>Admin Page - Web Wisata</h1>
-    </header>
+      <h1>Admin Page - Web Wisata</h1>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="asset/GSK_D-White.png" class="putih" /></a>
+        </div>
+</header>
     <nav>
         <a href="#">Beranda</a>
         <a href="#">Paket Wisata</a>
         <a href="#">Pelanggan</a>
-        <a href="#">Pemesanan</a>
+        <a href="#">Transaksi</a>
         <a href="logout.php">Logout</a>
     </nav>
    
@@ -53,6 +57,7 @@ if(!isset($_SESSION['admin_name'])){
                     <th>Deskripsi</th>
                     <th>Ulasan</th>
                     <th>Rating</th>
+                    <th>Actions</th>
                 </tr>";
         // Output data dari setiap baris
         while($row = $result->fetch_assoc()) {
@@ -64,6 +69,10 @@ if(!isset($_SESSION['admin_name'])){
                     <td>" . $row["deskripsi_wisata"]. "</td>
                     <td>" . $row["ulasan"]. "</td>
                     <td>" . $row["rating"]. "</td>
+                    <td>
+                      <a href='edit_form.php?id=" . $row["id_wisata"] . "'>Edit</a>
+                      <a href='delete.php?id=" . $row["id_wisata"] . "'>Delete</a>
+                    </td>
                   </tr>";
         }
         echo "</table>";
