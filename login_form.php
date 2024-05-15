@@ -30,6 +30,9 @@ if(isset($_POST['submit'])){
          $_SESSION['user_name'] = $row['name'];
          header('location:user_page.php');
 
+      } elseif ($row['user_type'] == 'guest') {
+         $_SESSION['guest_name'] = $row['name'];
+         header('location:guest_page.php');
       }
      
    }else{

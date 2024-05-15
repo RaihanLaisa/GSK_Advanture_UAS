@@ -73,7 +73,7 @@ if(!isset($_SESSION['user_name'])){
             </p>
             <div class="konten-isi">
               <p>
-                Demi menyelesaikan tugas mata kuliah pemogramman Mobile, kita kelompok 10 mengerjakan tugas akhir yaitu
+                Demi menyelesaikan tugas mata kuliah pemogramman Web, kita kelompok 10 mengerjakan tugas akhir yaitu
                 membuat web dengan studi kasus web wisata
               </p>
             </div>
