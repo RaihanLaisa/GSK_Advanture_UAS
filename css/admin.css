@@ -29,9 +29,9 @@ nav {
 }
 
 .logo {
-   position: absolute; /* Menggunakan posisi absolut agar dapat ditempatkan secara tepat di pojok kiri atas */
-   top: 0; /* Menempatkan elemen di bagian atas */
-   left: 0; /* Menempatkan elemen di bagian kiri */
+   position: absolute; 
+   top: 0; 
+   left: 0; 
    line-height: 55px;
    text-align: left;
  }

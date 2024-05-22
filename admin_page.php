@@ -34,7 +34,7 @@ if(!isset($_SESSION['admin_name'])){
         <a href="#">Beranda</a>
         <a href="#">Paket Wisata</a>
         <a href="#">Pelanggan</a>
-        <a href="#">Transaksi</a>
+        <a href="transaksi.php">Transaksi</a>
         <a href="logout.php">Logout</a>
     </nav>
    
