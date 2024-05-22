@@ -17,14 +17,12 @@ if(!isset($_SESSION['admin_name'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>admin page</title>
-
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="css/admin.css">
 
 </head>
 <body>
 <header>
-      <h1>Admin Page - Web Wisata</h1>
+      <h1>Admin Page - Gresik Discovery</h1>
       <div class="layar-dalam">
         <div class="logo">
           <a href=""><img src="asset/GSK_D-White.png" class="putih" /></a>
@@ -33,7 +31,6 @@ if(!isset($_SESSION['admin_name'])){
     <nav>
         <a href="#">Beranda</a>
         <a href="#">Paket Wisata</a>
-        <a href="#">Pelanggan</a>
         <a href="transaksi.php">Transaksi</a>
         <a href="logout.php">Logout</a>
     </nav>
