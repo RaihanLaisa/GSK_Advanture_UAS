@@ -89,13 +89,13 @@ if(!isset($_SESSION['admin_name'])){
         <div class="layar-dalam">
           <div>
             <h5>Info</h5>
-            Jl. Proklamasi Biologi no. 12
+            <p>Jl. Proklamasi Biologi no. 12</p>
           </div>
           <div>
             <h5>Contact</h5>
-            Kelompok 10, Surabaya, Rungkut
-            ~081249228875
-            ~10Group.com
+            <p>Kelompok 10, Surabaya, Rungkut</p>
+            <p>081249228875</p>
+            <p>10Group.com</p>
           </div>
           <div>
             <h5>Connect</h5>

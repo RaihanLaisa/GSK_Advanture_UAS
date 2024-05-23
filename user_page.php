@@ -38,7 +38,6 @@ if(!isset($_SESSION['user_name'])){
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#support">Support</a></li>
             <li><a href="#gallery"></a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -60,7 +59,7 @@ if(!isset($_SESSION['user_name'])){
             Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.
           </p>
           <p>
-            <a href="index.php" class="tombol">MORE INFO</a>
+            <a href="user2_page.php" class="tombol">MORE INFO</a>
           </p>
         </div>
       </header>
