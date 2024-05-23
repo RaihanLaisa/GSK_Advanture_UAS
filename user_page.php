@@ -158,7 +158,7 @@ if(!isset($_SESSION['user_name'])){
           </div>
         </div>
         <div class="layar-dalam">
-          <div class="copyright">&copy; 2024 Gresik Discovery</div>
+          <div class="copyright">&copy; 2222 Gresik Discovery</div>
         </div>
       </footer>
     </div>
