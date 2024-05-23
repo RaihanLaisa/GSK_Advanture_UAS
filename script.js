@@ -46,3 +46,15 @@ $(document).ready(function () {
         }
     })
 });
+document.addEventListener('DOMContentLoaded', function () {
+    var tombolMenu = document.querySelector('.tombol-menu');
+    var submenu = document.querySelector('.submenu');
+
+    tombolMenu.addEventListener('click', function () {
+        if (submenu.style.display === 'none' || submenu.style.display === '') {
+            submenu.style.display = 'block';
+        } else {
+            submenu.style.display = 'none';
+        }
+    });
+});

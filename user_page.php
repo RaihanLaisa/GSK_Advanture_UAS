@@ -18,32 +18,53 @@ if(!isset($_SESSION['user_name'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>user page</title>
 
-   <!-- custom css file link  -->
+   <!-- Custom CSS file link -->
    <link rel="stylesheet" href="css/user.css">
+   <link rel="stylesheet" href="css/style.css">
 
+
+
+   
 </head>
 <body>
 <nav>
-      <div class="layar-dalam">
+    <div class="layar-dalam">
         <div class="logo">
-          <a href=""><img src="asset/GSK_D-White.png" class="putih" /></a>
-          <a href=""><img src="asset/GSK_D_Black.png" class="hitam" /></a>
+            <a href=""><img src="asset/GSK_D-White.png" class="putih" /></a>
+            <a href=""><img src="asset/GSK_D_Black.png" class="hitam" /></a>
         </div>
-        <div class="menu">
-          <a href="#" class="tombol-menu">
-            <span class="garis"></span>
-            <span class="garis"></span>
-            <span class="garis"></span>
-          </a>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#gallery"></a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="logout.php" >logout</a></li>
-          </ul>
+        <div class="main-menu  d-none d-lg-block">
+
+           <a href="#" class="tombol-menu">
+                <span class="garis"></span>
+                <span class="garis"></span>
+                <span class="garis"></span>
+            </a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li>
+    <a href="#">Destinasi <i class="ti-angle-down"></i></a>
+    <ul class="submenu">
+        <li><a href="Pantai">Pantai</a></li>
+        <li><a href="Sejarah">Sejarah</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="#">Aktivitas <i class="ti-angle-down"></i></a>
+    <ul class="submenu">
+        <li><a href="Oleh-oleh">Oleh-oleh</a></li>
+        <li><a href="Event">Event</a></li>
+        <li><a href="Tips Liburan">Tips Liburan</a></li>
+    </ul>
+</li>
+
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#Rekomendasi">Rekomendasi</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
         </div>
       </div>
     </nav>
