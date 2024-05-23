@@ -1,4 +1,32 @@
-* {
+* 
+/* Button Styles */
+nav ul li a.logout-btn, 
+nav ul li a.login-btn{
+    background-color: #db3c20;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: inline-block;
+}
+nav ul li a.logout-btn:hover, 
+nav ul li a.login-btn:hover {
+    background-color: #b8321a;
+    text-decoration: none;
+}
+
+nav .menu ul li a {
+    color: #333;
+}
+nav ul li a.logout-btn, 
+nav ul li a.login-btn {
+    width: calc(100% - 20px); /* Adjust for padding */
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-size: 15px;
@@ -30,7 +58,7 @@
     transition: background-color 0.5s ease;
   }
   nav.putih {
-    background-color: #fff;
+    background-color: #fff; /* White background for navbar */
   }
   
   nav .logo {
@@ -71,7 +99,7 @@
   }
   
   nav ul li a:hover {
-    text-decoration: underline;
+    color: #333; /* Dark text color for links */
   }
   
   /* pengaturan header */
@@ -390,3 +418,51 @@ nav ul li:hover > ul {
 .submenu {
   display: none;
 }
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+  color: #ffa500;
+}
+.Rekomendasi .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.Rekomendasi .card img{
+  border-radius: 5px;
+}
+.Rekomendasi .card .card-body{
+  background: transparent;
+}
+.Rekomendasi .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.Rekomendasi .card .card-body p{
+  font-size: 15px;
+}
+.checked{
+  color: #ffa500;
+}
+.star i{
+  font-size: 15px;
+}
+.Rekomendasi .card .card-body h6{
+  font-size: 20px;
+}
+.Rekomendasi .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+}
+/* Section Packages End */

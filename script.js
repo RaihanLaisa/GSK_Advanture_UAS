@@ -1,4 +1,15 @@
 //menu
+document.addEventListener('DOMContentLoaded', function () {
+    var isLoggedIn = false; // Ubah sesuai dengan status login pengguna
+
+    if (isLoggedIn) {
+        document.querySelector('.login-btn').style.display = 'none';
+        document.querySelector('.register-btn').style.display = 'none';
+    } else {
+        document.querySelector('.logout-btn').style.display = 'none';
+    }
+});
+
 var tombolMenu = $(".tombol-menu");
 var menu = $("nav .menu ul");
 
