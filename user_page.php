@@ -96,31 +96,7 @@ if(!isset($_SESSION['user_name'])){
           </div>
         </section>
         
-        <section id="team">
-          <div class="layar-dalam">
-            <h3>Our Team</h3>
-            <p class="ringkasan">
-                Perkenalkan
-            </p>
-            <div class="tim">
-              <div>
-                <img src="asset/Elsa_1.jpg" />
-                <h6>Elsa Maya Bahri</h6>
-                <span>22082010226/F</span>
-              </div>
-              <div>
-                <img src="asset/Rikha_1.jpg" />
-                <h6>Rikha Maisya Kotalima</h6>
-                <span>22082010232/F</span>
-              </div>
-              <div>
-                <img src="asset/Raihan_1.jpg" />
-                <h6>Muhammad Raihan Laisa</h6>
-                <span>22082010248/F</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <section class="abuabu" id="blog">
           <div class="layar-dalam">
