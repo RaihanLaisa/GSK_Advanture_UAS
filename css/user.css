@@ -1,7 +1,6 @@
 * 
 /* Button Styles */
-nav ul li a.logout-btn, 
-nav ul li a.login-btn{
+nav ul li a.logout-btn{
     background-color: #db3c20;
     color: #fff;
     padding: 10px 10px;
@@ -9,8 +8,7 @@ nav ul li a.login-btn{
     margin-left: 10px;
     display: inline-block;
 }
-nav ul li a.logout-btn:hover, 
-nav ul li a.login-btn:hover {
+nav ul li a.logout-btn:hover {
     background-color: #b8321a;
     text-decoration: none;
 }
@@ -18,8 +16,7 @@ nav ul li a.login-btn:hover {
 nav .menu ul li a {
     color: #333;
 }
-nav ul li a.logout-btn, 
-nav ul li a.login-btn {
+nav ul li a.logout-btn{
     width: calc(100% - 20px); /* Adjust for padding */
     margin: 10px;
     display: block;
@@ -466,3 +463,95 @@ nav ul li:hover > ul {
   border-radius: 5px;
 }
 /* Section Packages End */
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.submenu li {
+    border-bottom: 1px solid #575757;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.submenu a:hover {
+    background-color: #575757;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Icon styles */
+.ti-angle-down {
+    margin-left: 5px;
+}
+
+.menu li:hover > a > .ti-angle-down {
+    transform: rotate(180deg);
+}
+
+/* Oleh-oleh Section */
+.section-padding {
+    padding: 60px 0;
+}
+
+.oleh-oleh {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.oleh-oleh h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #777;
+}

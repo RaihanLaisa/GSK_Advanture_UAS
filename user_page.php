@@ -81,7 +81,7 @@ if(!isset($_SESSION['user_name'])){
                 <li><a href="#Rekomendasi">Rekomendasi</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="logout.php" class="logout-btn">Logout</a></li>
-                <li><a href="login.html" class="login-btn">Login</a></li>
+             
                
             </ul>
         </div>
@@ -134,8 +134,34 @@ if(!isset($_SESSION['user_name'])){
             <p>Tak hanya sebatas tanah dan bangunan, 
                 Gresik adalah cerita kebesaran masa lalu yang terus hidup dalam setiap langkah ke depannya.</p>
           </div>
-        </section>
         
+          </nav>
+    </header>
+        </section>
+        <section id="Oleh-oleh" class="oleh-oleh section-padding">
+        <div class="container">
+            <h1>Oleh-oleh</h1>
+            <div class="item">
+            
+                <img src="img/oleh-oleh/item1.jpg" alt="Item 1">
+                <h2>Item 1</h2>
+                <p>Deskripsi item 1.</p>
+            </div>
+            <div class="item">
+                <img src="img/oleh-oleh/item2.jpg" alt="Item 2">
+                <h2>Item 2</h2>
+                <p>Deskripsi item 2.</p>
+            </div>
+            <div class="item">
+                <img src="img/oleh-oleh/item3.jpg" alt="Item 3">
+                <h2>Item 3</h2>
+                <p>Deskripsi item 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
         
 
         <section class="abuabu" id="blog">
