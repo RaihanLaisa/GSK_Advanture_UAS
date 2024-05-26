@@ -34,6 +34,21 @@ if(!isset($_SESSION['user_name']))
     <!-- Google Fonts -->
 
 
+  <!-- SEE NOW -->
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+   
+    
 
     </head>
     <body>
@@ -203,161 +218,255 @@ if(!isset($_SESSION['user_name']))
         <div class="main-txt">
           <h1><span>REKO</span>MENDASI</h1>
         </div>
+        <div class="container">
         <div class="row" style="margin-top: 30px;">
-          <div class="col-md-4 py-3 py-md-0">
-           
-          <div class="card">
-    <img src="asset/1 hari.jpg">
-    <div class="card-body">
-      <h3>1 Hari
-      <p>Wisata Bukit Kapur Gosari,klenteng kim hin, dan  bajak laut!</p>
-      <div class="star">
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star "></i>
-        <i class="fa-solid fa-star "></i>
-      </div>
-      <h6>Price: <strong>300.000</strong></h6>
-      <button id="bookNowBtn" class="button" onclick="document.getElementById('book').style.display = 'block'">Selengkapnya</button>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div id="book" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeBtn">&times;</span>
-    <h2>Travel Plan</h2>
-    <p>Berikut adalah rencana perjalanan 3 hari di Gresik, Jawa Timur, dengan anggaran yang ramah di kantong:</p>
-    <!-- Informasi perjalanan -->
-    <ul>
-      <li> 1.	Bukit Kapur Gosari
-•	Lokasi: Gosari, Gresik, Jawa Timur
-•	Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang
-•	Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata
-</li>
-      <li>2.	Klenteng Kim Hin
-•	Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur
-•	Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan
-•	Souvenir: Mungkin tersedia di sekitar klenteng
-</li>
-      <li>3.	Bajak Laut
-•	Lokasi: Gresik, Jawa Timur
-•	Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang
-•	Souvenir: Mungkin tersedia di sekitar area wisata
-
-</li>
-</li>[Transportasi Kesana:
-•	Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.
-Perhatikan Keadaan Cuaca dan Jam Buka:
-•	Untuk ketiga wisata buka pukul 08.00-17.00 WIB.
-]
-    </ul>
-  </div>
-</div>
-
-
-
-
-
-
-<!-- 2 hari -->
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/2 hari.jpg">
-             
-              <div class="card-body">
-                <h3>2 Hari 
-                <p>Hari Pertama: Bukit Jamur dan Pulau mangare</p>
-                <p>Hari Kedua: Wagos wisata alam dan Pantai</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+            <!-- Card 1 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/1 hari.jpg" class="card-img-top" alt="1 Hari">
+                    <div class="card-body">
+                        <h3>1 Hari</h3>
+                        <p>Wisata Bukit Kapur Gosari, Klenteng Kim Hin, dan Bajak Laut!</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>300.000</strong></h6>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                            See Now
+                        </button>
+                    </div>
                 </div>
-                <h6>Price: <strong>500.000</strong></h6>
-                <a href="#book">Selengkapnya</a>
-              </div>
             </div>
-
-        
-
-        <div class="row" style="margin-top: 30px;">
-
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-            <img src="asset/Sunanmalikibrahum_blog.png">
-              <div class="card-body">
-                <h3>Italy</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+            <!-- Card 2 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/2 hari.jpg" class="card-img-top" alt="2 Hari">
+                    <div class="card-body">
+                        <h3>2 Hari</h3>
+                        <p>Hari Pertama: Bukit Jamur dan Pulau Mangare</p>
+                        <p>Hari Kedua: Wagos wisata alam dan Pantai</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>500.000</strong></h6>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                            See Now
+                        </button>
+                    </div>
                 </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
-              </div>
             </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-            <img src="asset/Sunanmalikibrahum_blog.png">
-              <div class="card-body">
-                <h3>India</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+            <!-- Card 3 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/Sunanmalikibrahum_blog.png" class="card-img-top" alt="India">
+                    <div class="card-body">
+                        <h3>India</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>$500</strong></h6>
+                        <a href="#book" class="btn btn-primary">Book Now</a>
+                    </div>
                 </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
-              </div>
             </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-               <img src="asset/Sunanmalikibrahum_blog.png">
-              <div class="card-body">
-                <h3>United States</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
-                </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
-              </div>
-            </div>
-
-          </div>
-
-
-
         </div>
 
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="https://i.pinimg.com/564x/64/d3/e5/64d3e59129ae8000904691597396d1ed.jpg" class="img-thumbnail" alt="1 Hari">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Bukit Kapur Gosari</strong>
+                                <ul>
+                                   Lokasi: Gosari, Gresik, Jawa Timur</li>
+                                   Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang</li>
+                                   Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Klenteng Kim Hin</strong>
+                                <ul>
+                                    Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur</li>
+                                    Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan</li>
+                                    Souvenir: Mungkin tersedia di sekitar klenteng</li>
+                                </ul>
+                            </li>
+                            <li><strong>Bajak Laut</strong>
+                                <ul>
+                                   Lokasi: Gresik, Jawa Timur</li>
+                                    Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang</li>
+                                    Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>[Transportasi Kesana:</p>
+                        <ul>
+                            <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+                        </ul>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka:</p>
+                        <ul>
+                            <li>Untuk ketiga wisata buka pukul 08.00-17.00 WIB.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="https://i.pinimg.com/564x/64/d3/e5/64d3e59129ae8000904691597396d1ed.jpg" class="img-thumbnail" alt="2 Hari">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content for 2 Hari -->
+                        <!-- Similar to Modal 1 but with relevant content -->
+                    </div>
+                    <div class="modal-footer">
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Bukit Kapur Gosari</strong>
+                                <ul>
+                                    <li>Lokasi: Gosari, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang</li>
+                                    <li>Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Klenteng Kim Hin</strong>
+                                <ul>
+                                    <li>Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar klenteng</li>
+                                </ul>
+                            </li>
+                            <li><strong>Bajak Laut</strong>
+                                <ul>
+                                    <li>Lokasi: Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>[Transportasi Kesana:</p>
+                        <ul>
+                            <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+                        </ul>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka:</p>
+                        <ul>
+                            <li>Untuk ketiga wisata buka pukul 08.00-17.00 WIB.</li>
+                        </ul>
+                    </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Modal 3 -->
+ <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="https://i.pinimg.com/564x/64/d3/e5/64d3e59129ae8000904691597396d1ed.jpg" class="img-thumbnail" alt="3 Hari">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Wisata A</strong>
+                                <ul>
+                                    <li>Lokasi: A, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
+                                    <li>Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Wisata B</strong>
+                                <ul>
+                                    <li>Lokasi: B, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Wisata C</strong>
+                                <ul>
+                                    <li>Lokasi: C, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 20.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Wisata D</strong>
+                                <ul>
+                                    <li>Lokasi: D, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 25.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Wisata E</strong>
+                                <ul>
+                                    <li>Lokasi: E, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 30.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                            <li><strong>Wisata F</strong>
+                                <ul>
+                                    <li>Lokasi: F, Gresik, Jawa Timur</li>
+                                    <li>Tiket Masuk: Sekitar Rp 35.000 per orang</li>
+                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Transportasi Kesana:</p>
+                        <ul>
+                            <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+                        </ul>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka:</p>
+                        <ul>
+                            <li>Wisata buka pukul 08.00-17.00 WIB setiap hari.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       </div>
     </section>
     <!-- Section Packages End -->
 
-  <!-- CONTACT -->
+  <!-- CONCTact -->
         </section>
       </main>
       <footer id="contact">
