@@ -450,7 +450,7 @@ nav ul li:hover > ul {
   padding: 10px;
   text-decoration: none;
   background: #ffa500;
-  color: white;
+  color: rgb(192, 208, 217);
   border-radius: 5px;
 }
 /* Section Packages End */

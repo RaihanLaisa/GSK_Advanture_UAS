@@ -466,7 +466,7 @@ if(!isset($_SESSION['user_name']))
     </section>
     <!-- Section Packages End -->
 
-  <!-- CONCTact -->
+  <!-- CONCTat -->
         </section>
       </main>
       <footer id="contact">

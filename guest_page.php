@@ -43,6 +43,8 @@
       crossorigin="anonymous"
     ></script>
 
+    
+
     <!-- Boostrap icons -->
     <link
       rel="stylesheet"
@@ -76,7 +78,7 @@
     <style>
       body {
         font-family: "Work Sans", sans-serif;
-        background-image:url('asset/Bukit\ Kapur\ Gosari.jpg');
+        background:rgb(192, 208, 217);
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -341,6 +343,128 @@
       .bi-geo-alt {
         margin-right: 0.2rem;
       }
+
+      
+      
+      .services {
+    margin: 5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .services .title {
+    font-size: 2rem;
+  }
+  
+  .services .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .services .cards .card {
+    height: 12rem;
+    padding: 3rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+  }
+  .services .cards .card .icon {
+    margin-bottom: 1rem;
+  }
+  
+  .services .cards .card .title {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .services .cards .card p {
+    text-align: center;
+  }
+
+
+
+
+  .destination {
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.destination .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.destination .cards .image img {
+  height: 18rem;
+  width: 18rem;
+}
+
+.destination .cards .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.destination .cards .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destination .cards .time i {
+  margin-right: 1rem;
+}
+
     </style>
   </head>
   <body class="screen">
@@ -582,507 +706,86 @@
     <div class="alert alert-info" role="alert">
       Let's Visit Destination Of Indonesia
     </div>
-    <div class="explanation">
-      <h1>Favorite Destination</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <div class="card-deck">
-            <div class="card">
-              <img
-                src="https://i.pinimg.com/564x/64/d3/e5/64d3e59129ae8000904691597396d1ed.jpg"
-                class="img-thumbnail"
-                alt="wakatobi"
-              />
-              <div class="card-body">
-                <h5 class="center"> 1 Hari
-                
-      <p>Wisata Bukit Kapur Gosari,klenteng kim hin, dan  bajak laut!</p>
-      <div class="star">
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star checked"></i>
-        <i class="fa-solid fa-star "></i>
-        <i class="fa-solid fa-star "></i>
-      </div> 
-    </h5>
-      <h6>Price: <strong>300.000</strong></h6>
-                <!-- button -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  class="left"
-                  data-toggle="modal"
-                  data-target="#html"
-                >
-                  See Now
-                </button>
-                <!-- endbutton -->
-               
-               
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="html"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLongTitle"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <img
-                          src="https://i.pinimg.com/564x/64/d3/e5/64d3e59129ae8000904691597396d1ed.jpg"
-                          class="img-thumbnail"
-                          alt=" 1 HARI"
-                          
-                        />
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                      1.	Bukit Kapur Gosari
-•	Lokasi: Gosari, Gresik, Jawa Timur
-•	Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang
-•	Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata
-</li>
-      <li>2.	Klenteng Kim Hin
-•	Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur
-•	Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan
-•	Souvenir: Mungkin tersedia di sekitar klenteng
-</li>
-      <li>3.	Bajak Laut
-•	Lokasi: Gresik, Jawa Timur
-•	Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang
-•	Souvenir: Mungkin tersedia di sekitar area wisata
-
-</li>
-</li>[Transportasi Kesana:
-•	Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.
-Perhatikan Keadaan Cuaca dan Jam Buka:
-•	Untuk ketiga wisata buka pukul 08.00-17.00 WIB.
-]
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                        
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <!-- card 2 -->
+    <section class="services">
+        <p class="subtitle">CATEGORY</p>
+        <h2 class="title">We Offer Best Services</h2>
+        <div class="cards">
           <div class="card">
-            <img
-              src="https://i.pinimg.com/564x/23/b1/bd/23b1bd3cfc9922d7b5b18f91f84ae8dd.jpg"
-              class="img-thumbnail"
-              alt="komodo"
-            />
-            <div class="card-body">
-              <h5 class="center">Komodo Island</h5>
-
-              <!-- button -->
-              <button
-                type="button"
-                class="btn btn-primary"
-                class="left"
-                data-toggle="modal"
-                data-target="#css"
-              >
-                See Now
-              </button>
-              <!-- endbutton -->
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="css"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="exampleModalLongTitle"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <img
-                        src="https://i.pinimg.com/564x/23/b1/bd/23b1bd3cfc9922d7b5b18f91f84ae8dd.jpg"
-                        class="img-thumbnail"
-                        alt="komodo"
-                      />
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Komodo Island is one of the 7 Wonders of the World (2011
-                      voting results). Komodo National Park consists of 3 large
-                      islands, Komodo Island, Rinca Island, and Padar Island, as
-                      well as other small islands. The total area of this
-                      national park is 1,817 km2. Komodo Island is located at
-                      the westernmost tip of East Nusa Tenggara Province. On the
-                      island of Komodo, Komodo dragons live and reproduce well,
-                      according to data, until mid-2009, this island is
-                      inhabited by around 1300 Komodo dragons (+/- 2500 on all
-                      islands in TM. Komodo).
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end modal -->
+            <div class="icon">
+              <img src="asset/services1.png" alt="" />
             </div>
+            <h3 class="title">Calculated Weather</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+              totam.
+            </p>
           </div>
-          <!-- end card -->
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <!-- Card 3 -->
+
           <div class="card">
-            <img
-              src="https://i.pinimg.com/564x/ac/a9/51/aca95150321efbce4899236294198559.jpg"
-              class="img-thumbnail"
-              alt="gili"
-            />
-            <div class="card-body">
-              <h5 class="center">Trio Gili</h5>
-
-              <!-- button -->
-              <button
-                type="button"
-                class="btn btn-primary"
-                class="left"
-                data-toggle="modal"
-                data-target="#php"
-              >
-                See Now
-              </button>
-              <!-- endbutton -->
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="php"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="exampleModalLongTitle"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <img
-                        src="https://i.pinimg.com/564x/ac/a9/51/aca95150321efbce4899236294198559.jpg"
-                        class="img-thumbnail"
-                        alt="gili"
-                      />
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Trio Gili is the designation for three beaches in Lombok.
-                      The three islands include Gili Trawangan, Gili Meno and
-                      Gili Air. Currently there is access to get to these
-                      tourist attractions which are getting easier and growing.
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end modal -->
+            <div class="icon">
+            <img src="asset/services2.png" alt="" />
+            </div>
+            <h3 class="title">Calculated Weather</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+              totam.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+            <img src="asset/services3.png" alt="" />
+            </div>
+            <h3 class="title">Calculated Weather</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+              totam.
+            </p>
+          </div>
+          </section>
+      <section class="destination">
+        <p class="subtitle">Top Selling</p>
+        <h2 class="title">Top Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="assets/destination1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Rome, Italy</h3>
+              <h3>$5,32k</h3>
+            </div>
+            <div class="time">
+              <i class="fas fa-location-arrow"></i>
+              <h4>10 Days Trip</h4>
             </div>
           </div>
-          <!-- end card 3 -->
-        </div>
-      </div>
-    </div>
-    <!-- end card 1 -->
-    <!-- card 2 -->
-
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <div class="card-deck">
-            <!-- card 3 -->
-            <div class="card">
-              <img
-                src="https://i.pinimg.com/564x/57/e4/df/57e4df1636def1d128e1c70806805c46.jpg"
-                class="img-thumbnail"
-                alt="ampat"
-              />
-              <div class="card-body">
-                <h5 class="center">Raja Ampat</h5>
-
-                <!-- button -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  class="left"
-                  data-toggle="modal"
-                  data-target="#sql"
-                >
-                  See Now
-                </button>
-                <!-- endbutton -->
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="sql"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLongTitle"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <img
-                          src="https://i.pinimg.com/564x/57/e4/df/57e4df1636def1d128e1c70806805c46.jpg"
-                          class="img-thumbnail"
-                          alt="ampat"
-                        />
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Raja Ampat is a regency and is part of West Papua
-                        Province. To reach these islands, we must first set foot
-                        in the city of Sorong. Usually, many tourists use
-                        flights to get to this city. After arriving in the city
-                        of Sorong, we can use a kind of fast boat that usually
-                        sails twice a day to Waisai, the district capital of
-                        Raja Ampat. The trip will only take about 2-3 hours from
-                        the port of Sorong, until you arrive at the port of
-                        Waisai Raja Ampat.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal -->
-              </div>
+          <div class="card">
+            <div class="image">
+              <img src="assets/destination2.jpg" alt="" />
             </div>
-            <!-- end card 3 -->
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <div class="card-deck">
-            <!-- Card 4 -->
-            <div class="card">
-              <img
-                src="https://i.pinimg.com/564x/39/36/21/393621e53e296f39c89db1a9a5fd6ab4.jpg"
-                class="img-thumbnail"
-                alt="sentani"
-              />
-              <div class="card-body">
-                <h5 class="center">Sentani Lake</h5>
-
-                <!-- button -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  class="left"
-                  data-toggle="modal"
-                  data-target="#java"
-                >
-                  See Now
-                </button>
-                <!-- endbutton -->
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="java"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLongTitle"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <img
-                          src="https://i.pinimg.com/564x/39/36/21/393621e53e296f39c89db1a9a5fd6ab4.jpg"
-                          class="img-thumbnail"
-                          alt="sentani"
-                        />
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Lake Sentani is in the Sentani area, the capital of
-                        Jayapura Regency. This lake can be reached in 15 minutes
-                        from Sentani airport and stretches wide along the way to
-                        the city of Jayapura. You will feel a cool breeze and
-                        peaceful calm when you enter the Lake Sentani area. In
-                        fact, to be more at one with the nature of Lake Sentani,
-                        tourists can go around and visit the islands on Lake
-                        Sentani by renting available motorized boats.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal -->
-              </div>
+            <div class="content">
+              <h3>Rome, Italy</h3>
+              <h3>$5,32k</h3>
             </div>
-            <!-- end card 4 -->
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-          <div class="card-deck">
-            <!-- card 5 -->
-            <div class="card">
-              <img
-                src="https://i.pinimg.com/564x/97/b6/22/97b6225c22cbe34d94084ca6b7c0c00d.jpg"
-                class="img-thumbnail"
-                alt="lot"
-              />
-              <div class="card-body">
-                <h5 class="center">Tanah Lot</h5>
-
-                <!-- button -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  class="left"
-                  data-toggle="modal"
-                  data-target="#query"
-                >
-                  See Now
-                </button>
-                <!-- endbutton -->
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="query"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLongTitle"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <img
-                          src="https://i.pinimg.com/564x/97/b6/22/97b6225c22cbe34d94084ca6b7c0c00d.jpg"
-                          class="img-thumbnail"
-                          alt="lot"
-                        />
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Tanah Lot Bali is one of the tourist attractions that
-                        must be visited when going to the Island of the Gods.
-                        This place which is one of the tourism icons of the
-                        island of Bali, turns out to be one of several important
-                        temples for local Hindus.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end modal -->
-              </div>
+            <div class="time">
+              <i class="fas fa-location-arrow"></i>
+              <h4>10 Days Trip</h4>
             </div>
-            <!-- end card 5 -->
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card 2 -->
-    <!-- end card 1 -->
-    <!-- card 2 -->
-    <!-- end card 2 -->
-  </body>
+          <div class="card">
+            <div class="image">
+              <img src="assets/destination3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Rome, Italy</h3>
+              <h3>$5,32k</h3>
+            </div>
+            <div class="time">
+              <i class="fas fa-location-arrow"></i>
+              <h4>10 Days Trip</h4>
+            </div>
+          </div>
+        </div>  
   <br />
   <section class="footer">
     <div class="container">
