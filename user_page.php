@@ -213,55 +213,70 @@ if(!isset($_SESSION['user_name'])){
         </div>
 
         <div class="row" style="margin-top: 30px;">
-
           <div class="col-md-4 py-3 py-md-0">
-
+            
             <div class="card">
-            <img src="asset/Sunanmalikibrahum_blog.png">
-              <div class="card-body">
-                <h3>United Kingdom</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
-                </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
-              </div>
-            </div>
+    <img src="asset/1 hari.jpg">
+    <div class="card-body">
+      <h3>1 Hari
+      <p>Wisata Bukit Kapur Gosari,klenteng kim hin, dan  bajak laut!</p>
+      <div class="star">
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star checked"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+      <h6>Price: <strong>300.000</strong></h6>
+      <button id="bookNowBtn" class="button" onclick="document.getElementById('book').style.display = 'block'">Selengkapnya</button>
 
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="book" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeBtn">&times;</span>
+    <h2>Travel Plan</h2>
+    <p>Berikut adalah rencana perjalanan 3 hari di Gresik, Jawa Timur, dengan anggaran yang ramah di kantong:</p>
+    <!-- Informasi perjalanan -->
+    <ul>
+      <li> 1.	Bukit Kapur Gosari
+•	Lokasi: Gosari, Gresik, Jawa Timur
+•	Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang
+•	Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata
+</li>
+      <li>2.	Klenteng Kim Hin
+•	Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur
+•	Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan
+•	Souvenir: Mungkin tersedia di sekitar klenteng
+</li>
+      <li>3.	Bajak Laut
+•	Lokasi: Gresik, Jawa Timur
+•	Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang
+•	Souvenir: Mungkin tersedia di sekitar area wisata
+
+</li>
+</li>[Transportasi Kesana:
+•	Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.
+Perhatikan Keadaan Cuaca dan Jam Buka:
+•	Untuk ketiga wisata buka pukul 08.00-17.00 WIB.
+]
+
+    </ul>
+  </div>
+</div>
+
+<!-- 2 hari -->
           </div>
           <div class="col-md-4 py-3 py-md-0">
-
             <div class="card">
-            <img src="asset/Sunanmalikibrahum_blog.png">
-              <div class="card-body">
-                <h3>France</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
-                </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="asset/Sunanmalikibrahum_blog.png">
+              <img src="asset/2 hari.jpg">
              
               <div class="card-body">
-                <h3>Pakistan</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                <h3>2 Hari 
+                <p>Hari Pertama: Bukit Jamur dan Pulau mangare</p>
+                <p>Hari Kedua: Wagos wisata alam dan Pantai</p>
                 <div class="star">
                   <i class="fa-solid fa-star checked"></i>
                   <i class="fa-solid fa-star checked"></i>
@@ -269,8 +284,8 @@ if(!isset($_SESSION['user_name'])){
                   <i class="fa-solid fa-star "></i>
                   <i class="fa-solid fa-star "></i>
                 </div>
-                <h6>Price: <strong>$500</strong></h6>
-                <a href="#book">Book Now</a>
+                <h6>Price: <strong>500.000</strong></h6>
+                <a href="#book">Selengkapnya</a>
               </div>
             </div>
 

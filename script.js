@@ -69,3 +69,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Ambil elemen modal dan tombol "Book Now"
+var modal = document.getElementById('book');
+var bookNowBtn = document.getElementById('bookNowBtn');
+
+// Tambahkan event listener untuk menampilkan modal saat tombol "Book Now" diklik
+bookNowBtn.addEventListener('click', function() {
+  modal.style.display = "block";
+});
+
+// Ambil elemen modal dan tombol "Book Now"
+var modal = document.getElementById('book');
+var closeBtn = document.getElementById('closeBtn');
+
+// Tambahkan event listener untuk menutup modal saat tombol close diklik
+closeBtn.addEventListener('click', function() {
+  modal.style.display = "none";
+  // Kembali ke halaman sebelumnya
+  history.back();
+});
