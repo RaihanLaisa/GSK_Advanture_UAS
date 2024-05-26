@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         document.querySelector('.logout-btn').style.display = 'none';
     }
-});
+}); //
 
 var tombolMenu = $(".tombol-menu");
 var menu = $("nav .menu ul");
@@ -40,8 +40,11 @@ $(window).resize(function () {
     }
     klikMenu();
 });
+//Mengatur perilaku menu dropdown saat lebar layar berubah.
 
-//efek scroll 
+
+
+//efek scroll NAV BAR
 $(document).ready(function () {
     var scroll_pos = 0;
     $(document).scroll(function () {
@@ -57,6 +60,9 @@ $(document).ready(function () {
         }
     })
 });
+//
+
+//Menampilkan dan menyembunyikan submenu saat tombol menu diklik.
 document.addEventListener('DOMContentLoaded', function () {
     var tombolMenu = document.querySelector('.tombol-menu');
     var submenu = document.querySelector('.submenu');
@@ -90,3 +96,6 @@ closeBtn.addEventListener('click', function() {
   // Kembali ke halaman sebelumnya
   history.back();
 });
+
+
+  

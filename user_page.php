@@ -1,15 +1,9 @@
 <?php
-
 @include 'config.php';
-
 session_start();
-
-if(!isset($_SESSION['user_name'])){
-   header('location:login_form.php');
-}
-
+if(!isset($_SESSION['user_name']))
+{header('location:login_form.php');}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +15,6 @@ if(!isset($_SESSION['user_name'])){
    <!-- Custom CSS file link -->
    <link rel="stylesheet" href="css/user.css">
    <link rel="stylesheet" href="css/style.css">
-
    <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap Link -->
@@ -41,52 +34,50 @@ if(!isset($_SESSION['user_name'])){
     <!-- Google Fonts -->
 
 
-   
-</head>
-<body>
-<nav>
+
+    </head>
+    <body>
+    <nav>
     <div class="layar-dalam">
         <div class="logo">
             <a href=""><img src="asset/GSK_D-White.png" class="putih" /></a>
             <a href=""><img src="asset/GSK_D_Black.png" class="hitam" /></a>
         </div>
         <div class="main-menu  d-none d-lg-block">
-
            <a href="#" class="tombol-menu">
                 <span class="garis"></span>
                 <span class="garis"></span>
                 <span class="garis"></span>
             </a>
-            <ul>
+            <ul>   <!--NAV BAR-->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutus">About Us</a></li>
                 <li>
-    <a href="#">Destinasi <i class="ti-angle-down"></i></a>
-    <ul class="submenu">
-        <li><a href="Pantai">Pantai</a></li>
-        <li><a href="Sejarah">Sejarah</a></li>
-    </ul>
-</li>
-
-<li>
-    <a href="#">Aktivitas <i class="ti-angle-down"></i></a>
-    <ul class="submenu">
-        <li><a href="Oleh-oleh">Oleh-oleh</a></li>
-        <li><a href="Event">Event</a></li>
-        <li><a href="Tips Liburan">Tips Liburan</a></li>
-    </ul>
-</li>
-
+                <a href="#">Destinasi <i class="ti-angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="Pantai">Pantai</a></li>
+                    <li><a href="Sejarah">Sejarah</a></li>
+              </ul>
+              </li>
+                      <!-- NAV BAR-->
+              <li>
+                <a href="#">Aktivitas <i class="ti-angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="Oleh-oleh">Oleh-oleh</a></li>
+                    <li><a href="Event">Event</a></li>
+                    <li><a href="Tips Liburan">Tips Liburan</a></li>
+              </ul>
+              </li>     <!-- NAV BAR -->
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#Rekomendasi">Rekomendasi</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="logout.php" class="logout-btn">Logout</a></li>
              
-               
             </ul>
         </div>
       </div>
     </nav>
+      <!-- HOME -->
     <div class="layar-penuh">
       <header id="home">
         <div class="overlay"></div>
@@ -98,10 +89,10 @@ if(!isset($_SESSION['user_name'])){
           <p>
             Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.
           </p>
-          <p>
             <a href="user2_page.php" class="tombol">MORE INFO</a>
           </p>
         </div>
+        <!-- ABOUT US -->
       </header>
       <main>
         <section id="aboutus">
@@ -118,7 +109,7 @@ if(!isset($_SESSION['user_name'])){
             </div>
           </div>
         </section>
-        
+         <!-- Galerry -->
         <section id="gallery">
           <div><img src="asset/Banyu Urip Mangrove Center.png" /></div>
           <div><img src="asset/Bukit Kapur Sekapuk.png" /></div>
@@ -129,14 +120,15 @@ if(!isset($_SESSION['user_name'])){
           <div><img src="asset/Pantai Delegan.png" /></div>
           <div><img src="asset/Wagos Wisata Alam Gosari.png" /></div>
         </section>
+        
         <section class="quote">
           <div class="layar-dalam">
             <p>Tak hanya sebatas tanah dan bangunan, 
                 Gresik adalah cerita kebesaran masa lalu yang terus hidup dalam setiap langkah ke depannya.</p>
           </div>
-        
           </nav>
-    </header>
+     <!-- Oleh oleh-->
+        </header>
         </section>
         <section id="Oleh-oleh" class="oleh-oleh section-padding">
         <div class="container">
@@ -158,12 +150,11 @@ if(!isset($_SESSION['user_name'])){
                 <p>Deskripsi item 3.</p>
             </div>
         </div>
+         <!-- -->
+  <!-- BLOG -->
     </section>
-
     <script src="js/main.js"></script>
 </body>
-        
-
         <section class="abuabu" id="blog">
           <div class="layar-dalam">
             <h3>Lastest Blog</h3>
@@ -204,6 +195,7 @@ if(!isset($_SESSION['user_name'])){
               </div>
             </div>
           </div>
+
 <!-- Section Packages Start -->
 <section class="Rekomendasi" id="Rekomendasi">
       <div class="container">
@@ -211,11 +203,10 @@ if(!isset($_SESSION['user_name'])){
         <div class="main-txt">
           <h1><span>REKO</span>MENDASI</h1>
         </div>
-
         <div class="row" style="margin-top: 30px;">
           <div class="col-md-4 py-3 py-md-0">
-            
-            <div class="card">
+           
+          <div class="card">
     <img src="asset/1 hari.jpg">
     <div class="card-body">
       <h3>1 Hari
@@ -229,7 +220,6 @@ if(!isset($_SESSION['user_name'])){
       </div>
       <h6>Price: <strong>300.000</strong></h6>
       <button id="bookNowBtn" class="button" onclick="document.getElementById('book').style.display = 'block'">Selengkapnya</button>
-
     </div>
   </div>
 
@@ -262,10 +252,14 @@ if(!isset($_SESSION['user_name'])){
 Perhatikan Keadaan Cuaca dan Jam Buka:
 •	Untuk ketiga wisata buka pukul 08.00-17.00 WIB.
 ]
-
     </ul>
   </div>
 </div>
+
+
+
+
+
 
 <!-- 2 hari -->
           </div>
@@ -289,13 +283,7 @@ Perhatikan Keadaan Cuaca dan Jam Buka:
               </div>
             </div>
 
-          </div>
-
-
-
-        </div>
-
-
+        
 
         <div class="row" style="margin-top: 30px;">
 
@@ -369,7 +357,7 @@ Perhatikan Keadaan Cuaca dan Jam Buka:
     </section>
     <!-- Section Packages End -->
 
-
+  <!-- CONTACT -->
         </section>
       </main>
       <footer id="contact">
