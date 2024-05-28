@@ -10,27 +10,25 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = " SELECT * FROM user_forma WHERE email = '$email' && password = '$pass' ";
+   $select = "SELECT * FROM user_forma WHERE email = '$email'";
 
    $result = mysqli_query($conn, $select);
 
    if(mysqli_num_rows($result) > 0){
 
-      $error[] = 'user already exist!';
+      $error[] = 'User already exists!';
 
-   }else{
+   } else {
 
       if($pass != $cpass){
-         $error[] = 'password not matched!';
-      }else{
+         $error[] = 'Password not matched!';
+      } else {
          $insert = "INSERT INTO user_forma(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }
    }
-
-};
-
+}
 
 ?>
 
@@ -43,7 +41,7 @@ if(isset($_POST['submit'])){
    <title>register form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="css/style2.css">
 
 </head>
 <body>
@@ -59,16 +57,17 @@ if(isset($_POST['submit'])){
          };
       };
       ?>
-      <input type="text" name="name" required placeholder="enter your name">
-      <input type="email" name="email" required placeholder="enter your email">
-      <input type="password" name="password" required placeholder="enter your password">
-      <input type="password" name="cpassword" required placeholder="confirm your password">
-      <select name="user_type">
-         <option value="user">user</option>
-         <option value="admin">admin</option>
+      <input type="text" name="name" required placeholder="Enter your name">
+      <input type="email" name="email" required placeholder="Enter your email">
+      <input type="password" name="password" required placeholder="Enter your password">
+      <input type="password" name="cpassword" required placeholder="Confirm your password">
+      <select name="user_type" required>
+         <option value="user">User</option>
+         <option value="admin">Admin</option>
+         <option value="guest">Guest</option>
       </select>
-      <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
+      <input type="submit" name="submit" value="Register now" class="form-btn">
+      <p>Already have an account? <a href="login_form.php">Login now</a></p>
    </form>
 
 </div>
