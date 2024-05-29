@@ -104,7 +104,7 @@ if(!isset($_SESSION['user_name']))
           <p>
             Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.
           </p>
-            <a href="user2_page.php" class="tombol">MORE INFO</a>
+            <a href="deskripsi_wisata.php" class="tombol">MORE INFO</a>
           </p>
         </div>
         <!-- ABOUT US -->
