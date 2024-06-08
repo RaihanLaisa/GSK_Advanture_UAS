@@ -1,5 +1,13 @@
 <?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "user_db";
+    $conn = mysqli_connect($host,$user,$pass,$db);
 
-$conn = mysqli_connect('localhost','root','','user_db');
+    if(!$conn){
+        die("koneksi dengan database gagal: ".mysqli_connect_error());
+    } else {
+    }
 
 ?>

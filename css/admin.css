@@ -20,14 +20,36 @@
   .layar-penuh {
     width: 100%;
   }
- 
- nav {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
- }
- 
+  
+nav {
+  background-color: #444;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+    nav {
+        text-align: left;
+        padding: 5px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
  .logo {
     position: absolute; 
     top: 0; 
@@ -40,12 +62,6 @@
     vertical-align: middle;
     width: 120px;
   }
- 
- nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
- }
  
  .container {
     width: 80%;
@@ -74,9 +90,8 @@
 .content {
     overflow-x: auto;
 }
- 
  footer {
-    padding: 65px 0px 60px 0px;
+    padding: 30px 0px 50px 0px;
     background-color: #343a40;
     color: #fff;
   }
