@@ -488,8 +488,7 @@ if(!isset($_SESSION['user_name']))
         <div class="layar-dalam">
           <div class="copyright">&copy; 2222 Gresik Discovery</div>
         </div>
-      </footer>
-    </div>
+      
     <script src="javascript.js"></script>
 </body>
 </html>
