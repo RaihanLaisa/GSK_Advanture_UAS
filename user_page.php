@@ -172,31 +172,7 @@ if(!isset($_SESSION['user_name']))
             <p>Tak hanya sebatas tanah dan bangunan, 
                 Gresik adalah cerita kebesaran masa lalu yang terus hidup dalam setiap langkah ke depannya.</p>
           </div>
-          </nav>
-     <!-- Oleh oleh-->
-        </header>
-        </section>
-        <section id="Oleh-oleh" class="oleh-oleh section-padding">
-        <div class="container">
-            <h1>Oleh-oleh</h1>
-            <div class="item">
-            
-                <img src="img/oleh-oleh/item1.jpg" alt="Item 1">
-                <h2>Item 1</h2>
-                <p>Deskripsi item 1.</p>
-            </div>
-            <div class="item">
-                <img src="img/oleh-oleh/item2.jpg" alt="Item 2">
-                <h2>Item 2</h2>
-                <p>Deskripsi item 2.</p>
-            </div>
-            <div class="item">
-                <img src="img/oleh-oleh/item3.jpg" alt="Item 3">
-                <h2>Item 3</h2>
-                <p>Deskripsi item 3.</p>
-            </div>
-        </div>
-         <!-- -->
+         
   <!-- BLOG -->
     </section>
     <script src="js/main.js"></script>
@@ -254,7 +230,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 1 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/1 hari.jpg" class="card-img-top" alt="1 Hari">
+                    <img src="asset/2.png" class="card-img-top" alt="1 Hari">
                     <div class="card-body">
                         <h3>1 Hari</h3>
                         <p>Wisata Bukit Kapur Gosari, Klenteng Kim Hin, dan Bajak Laut!</p>
@@ -276,7 +252,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 2 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/2 hari.jpg" class="card-img-top" alt="2 Hari">
+                    <img src="asset/2 hari.png" class="card-img-top" alt="2 Hari">
                     <div class="card-body">
                         <h3>2 Hari</h3>
                         <p>Hari Pertama: Bukit Jamur dan Pulau Mangare</p>
@@ -299,7 +275,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 3 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                <img src="asset/1 hari.jpg" class="card-img-top" alt="3 Hari">
+                <img src="asset/3.png" class="card-img-top" alt="3 Hari">
                     <div class="card-body">
                         <h3>3 Hari</h3>
                         <p>Hari Pertama: Banyu Urip dan Telaga Ngipik</p>
@@ -314,7 +290,7 @@ if(!isset($_SESSION['user_name']))
                         </div>
                         <h6>Price: <strong>700.000</strong></h6>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
                             See Now
                         </button>
                     </div>
@@ -331,37 +307,35 @@ if(!isset($_SESSION['user_name']))
                         </button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li><strong>Bukit Kapur Gosari</strong>
-                                <ul>
-                                   Lokasi: Gosari, Gresik, Jawa Timur</li>
-                                   Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang</li>
-                                   Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Klenteng Kim Hin</strong>
-                                <ul>
-                                    Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur</li>
-                                    Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan</li>
-                                    Souvenir: Mungkin tersedia di sekitar klenteng</li>
-                                </ul>
-                            </li>
-                            <li><strong>Bajak Laut</strong>
-                                <ul>
-                                   Lokasi: Gresik, Jawa Timur</li>
-                                    Tiket Masuk: Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang</li>
-                                    Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
+                            
+                              <strong>1. Bukit Kapur Gosari</strong>
+                             <ul>
+                            Lokasi: Gosari, Gresik, Jawa Timur
+                            <li>Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang</li>
                         </ul>
-                        <p>[Transportasi Kesana:</p>
-                            <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+
+                      
+                  <strong>2. Klenteng Kim Hin</strong>
+                  <ul>
+                      Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan</li>
+                  </ul>
+                            
+                 <strong>3. Bajak Laut</strong>
+                  <ul>
+                    Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang</li>
+                  </ul>
+                          
+                  <li> <strong>Transportasi</strong>
+                         Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
                         </ul>
-                        <p>Perhatikan Keadaan Cuaca dan Jam Buka:</p>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka</p>
                         <ul>
                             <li>Untuk ketiga wisata buka pukul 08.00-17.00 WIB.</li>
                         </ul>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
@@ -385,38 +359,38 @@ if(!isset($_SESSION['user_name']))
                     </div>
                     <div class="modal-footer">
                     <div class="modal-body">
-                        <ul>
-                        <ul>
-                    <li><strong>Hari 1: Bukit Jamur</strong>
-                        <ul>
-                            <li>Lokasi: Bungah, Gresik, Jawa Timur</li>
-                            <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
-                            <li>Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
-                        </ul>
-                    </li>
-                    <li><strong>Hari 2: Pantai Delegan</strong>
-                        <ul>
-                            <li>Lokasi: Delegan, Panceng, Gresik, Jawa Timur</li>
+                    <strong>Hari Pertama</strong></ul>
+                    <strong>1. Bukit Jamur</strong>
+                             <ul>
+                            Lokasi: Bungah, Gresik, Jawa Timur
                             <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
-                            <li>Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
                         </ul>
-                    </li>
-                    <li><strong>Hari 3: Wisata Kuliner Gresik</strong>
+
+                  <strong>2. Pulau Mangare</strong>
+                  <ul>
+                      Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 20.000 per orang</li>
+                  </ul>
+                   
+                  <strong>Hari Kedua</strong> </ul>
+                 <strong>1. Wagos Wisata</strong>
+                  <ul>
+                    Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
+                  </ul>
+                  <strong>2.Pantai</strong>
+                  <ul>
+                      Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
+                  </ul>
+
+                  <li> <strong>Transportasi</strong>
+                         Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+                        </ul>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka</p>
                         <ul>
-                            <li>Lokasi: Pusat Kota Gresik, Jawa Timur</li>
-                            <li>Biaya: Sesuai dengan makanan yang dipilih</li>
-                            <li>Souvenir: Tersedia oleh-oleh khas Gresik di sekitar area wisata kuliner</li>
+                            <li>Wisata buka pukul 08.00-17.00 WIB.</li>
                         </ul>
-                    </li>
-                </ul>
-                <p><strong>Transportasi Kesana:</strong></p>
-                <ul>
-                    <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
-                </ul>
-                <p><strong>Perhatikan Keadaan Cuaca dan Jam Buka:</strong></p>
-                <ul>
-                    <li>Untuk ketiga wisata buka pukul 08.00-17.00 WIB.</li>
-                </ul>
                     </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
@@ -426,66 +400,58 @@ if(!isset($_SESSION['user_name']))
     </div>
 
  <!-- Modal 3 -->
- <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+ <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="asset/1 hari.jpg" class="img-thumbnail" alt="3 Hari">
+                        <img src="asset/Bukit Kapur Gosari.jpg" class="img-thumbnail" alt="3 Hari">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <ul>
-                            <li><strong>Wisata A</strong>
-                                <ul>
-                                    <li>Lokasi: A, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
-                                    <li>Souvenir: Tersedia berbagai macam souvenir lokal di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Wisata B</strong>
-                                <ul>
-                                    <li>Lokasi: B, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
-                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Wisata C</strong>
-                                <ul>
-                                    <li>Lokasi: C, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 20.000 per orang</li>
-                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Wisata D</strong>
-                                <ul>
-                                    <li>Lokasi: D, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 25.000 per orang</li>
-                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Wisata E</strong>
-                                <ul>
-                                    <li>Lokasi: E, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 30.000 per orang</li>
-                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
-                            <li><strong>Wisata F</strong>
-                                <ul>
-                                    <li>Lokasi: F, Gresik, Jawa Timur</li>
-                                    <li>Tiket Masuk: Sekitar Rp 35.000 per orang</li>
-                                    <li>Souvenir: Mungkin tersedia di sekitar area wisata</li>
-                                </ul>
-                            </li>
+                    <strong>Hari Pertama</strong></ul>
+                    <strong>1.Banyu Urip</strong>
+                             <ul>
+                            Lokasi:  Gresik, Jawa Timur
+                            <li>Tiket Masuk: Sekitar Rp 5.000 per orang</li>
                         </ul>
-                        <p>Transportasi Kesana:</p>
-                            <li>Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
+
+                  <strong>2. Telaga Ngipik</strong>
+                  <ul>
+                      Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
+                  </ul>
+                   
+                  <strong>Hari Kedua</strong> </ul>
+                 <strong>1. Bukit Kapur</strong>
+                  <ul>
+                    Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
+                  </ul>
+                  <strong>2.Pantai Karng Kering</strong>
+                  <ul>
+                      Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
+                  </ul>
+                  
+                  <strong>Hari Ketiga</strong> </ul>
+                 <strong>1. Makam Sunan Giri</strong>
+                  <ul>
+                    Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Gratis, namun sumbangan sukarela dapat diberikan</li>
+                  </ul>
+                  <strong>2.Dynasty Water World</strong>
+                  <ul>
+                      Lokasi: Gresik, Jawa Timur</li>
+                      <li>Tiket Masuk: Sekitar Rp 25.000 per orang</li>
+                  </ul>
+                  <li> <strong>Transportasi</strong>
+                         Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
                         </ul>
-                        <p>Perhatikan Keadaan Cuaca dan Jam Buka:</p>
+                        <p>Perhatikan Keadaan Cuaca dan Jam Buka</p>
                         <ul>
-                            <li>Wisata buka pukul 08.00-17.00 WIB setiap hari.</li>
+                            <li>Wisata buka pukul 08.00-17.00 WIB.</li>
                         </ul>
                     </div>
                     <div class="modal-footer">

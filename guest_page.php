@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TravellinWeb</title>
+    <title>Guest page</title>
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -75,10 +75,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
+
+
     <style>
       body {
         font-family: "Work Sans", sans-serif;
-        background:rgb(192, 208, 217);
+        background-color: whitesmoke;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -409,8 +411,6 @@
   }
 
 
-
-
   .destination {
   margin: 5rem 0;
   display: -webkit-box;
@@ -465,6 +465,33 @@
   margin-right: 1rem;
 }
 
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+/* Section code */
     </style>
   </head>
   <body class="screen">
@@ -656,7 +683,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img
-            src="https://i.pinimg.com/564x/d7/0b/3a/d70b3a09eddf10f389bd2a693cb40d4d.jpg "
+            src="asset/Banyu Urip Mangrove Center.jpg "
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -665,7 +692,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <img
-            src="https://i.pinimg.com/564x/c8/ac/89/c8ac89c11c41e971c1e32fa56d09819a.jpg"
+            src="asset/Dynasty Water World.jpg"
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -674,7 +701,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <img
-            src="https://i.pinimg.com/564x/36/ed/81/36ed818bb5ab140088efe62587ae7db4.jpg"
+            src="asset/Pantai Karang Kering.jpg"
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -706,123 +733,86 @@
     <div class="alert alert-info" role="alert">
       Let's Visit Destination Of Indonesia
     </div>
-    <section class="services">
-        <p class="subtitle">CATEGORY</p>
-        <h2 class="title">We Offer Best Services</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="icon">
-              <img src="asset/services1.png" alt="" />
-            </div>
-            <h3 class="title">Calculated Weather</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              totam.
-            </p>
-          </div>
+    
+    
+    
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
 
-          <div class="card">
-            <div class="icon">
-            <img src="asset/services2.png" alt="" />
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventures</h3>
+                <p>Dapat menemukan dan menjelajahi berbagai kegiatan petualangan yang tersedia di berbagai destinasi. </p>
+              </div>
             </div>
-            <h3 class="title">Calculated Weather</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              totam.
-            </p>
+
           </div>
-          <div class="card">
-            <div class="icon">
-            <img src="asset/services3.png" alt="" />
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Destinasi</h3>
+                <p>Menyediakan penjelasan lengkap tentang berbagai destinasi wisata yang ada, mulai dari sejarah, pantai, bukit, hingga kegiatan yang dapat dikunjungi.</p>
+              </div>
             </div>
-            <h3 class="title">Calculated Weather</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              totam.
-            </p>
+
           </div>
-          </section>
-      <section class="destination">
-        <p class="subtitle">Top Selling</p>
-        <h2 class="title">Top Destinations</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="image">
-              <img src="assets/destination1.png" alt="" />
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3> Rekomendai Perjalanan</h3>
+                <p> Disesuaikan dengan preferensi pengguna, seperti durasi perjalanan, jenis kegiatan yang diminati, dan anggaran yang dimiliki.</p>
+              </div>
             </div>
-            <div class="content">
-              <h3>Rome, Italy</h3>
-              <h3>$5,32k</h3>
-            </div>
-            <div class="time">
-              <i class="fas fa-location-arrow"></i>
-              <h4>10 Days Trip</h4>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="assets/destination2.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h3>Rome, Italy</h3>
-              <h3>$5,32k</h3>
-            </div>
-            <div class="time">
-              <i class="fas fa-location-arrow"></i>
-              <h4>10 Days Trip</h4>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="assets/destination3.png" alt="" />
-            </div>
-            <div class="content">
-              <h3>Rome, Italy</h3>
-              <h3>$5,32k</h3>
-            </div>
-            <div class="time">
-              <i class="fas fa-location-arrow"></i>
-              <h4>10 Days Trip</h4>
-            </div>
-          </div>
-        </div>  
-  <br />
+
+    </section>
+    <!-- Section Services End -->
+  
+  
   <section class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <h4>Services</h4>
-          <p>Petshop</p>
-          <p>Movie Streaming</p>
-          <p>Delivery Food</p>
-        </div>
-        <div class="col-md-3">
+         
           <h4>Contact</h4>
-          <p><i class="bi bi-envelope"></i> ginas.tobing@gmail.com</p>
-          <p><i class="bi bi-geo-alt"></i>Jakarta, Indonesia</p>
+          <p><i class="bi bi-envelope"></i> 10@gmail.com</p>
+          <p><i class="bi bi-geo-alt"></i>Gresik, Indonesia</p>
         </div>
         <div class="col-md-3">
           <h4>Follow Us on</h4>
-          <a href="https://www.instagram.com/chikogina_/?igshid=YmMyMTA2M2Y%3D"
+          <a href="https://www.instagram.com/rkamaisya?igsh=NWh3amY0czI3Mzdw&utm_source=qr "
             ><img
               id="instagramLogo"
               src="https://img.icons8.com/3d-fluency/344/instagram-new.png"
               width="20px"
-              alt="instagram link"
+              alt="instagram link Rk's"
           /></a>
-          <a href="https://www.linkedin.com/in/ginatobing"
+          <a href="https://www.instagram.com/elsamayaa._?igsh=aDl6ZjNhMGR6eXR4"
             ><img
-              id="linkendLogo"
-              src="https://img.icons8.com/fluency/344/linkedin.png"
+            id="instagramLogo"
+            src="https://img.icons8.com/3d-fluency/344/instagram-new.png"
               width="20px"
-              alt="linked link"
+              alt="instagram link Els"
           /></a>
-          <a href="https://github.com/Ginasonia98?tab=repositories"
+          <a href="https://www.instagram.com/raihanlaisa?igsh=MTdpdnl3bmx5ZmQ4NQ=="
             ><img
-              id="githubLogo"
-              src="https://img.icons8.com/sf-regular/344/github.png"
+            id="instagramLogo"
+              src="https://img.icons8.com/3d-fluency/344/instagram-new.png"
               width="20px"
-              alt="github link"
+              alt="instagram link Rhn's"
           /></a>
         </div>
         <a href="contact-us.html" class="btn btn-link" role="button">Contact Us</a>
