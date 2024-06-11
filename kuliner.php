@@ -75,7 +75,7 @@
                 <a href="asset/pudak2.png" class="glightbox"><img src="asset/pudak2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pudak</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
 
                 </p>
@@ -85,7 +85,6 @@
                 <a href="asset/otak.png" class="glightbox"><img src="asset/otak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Otak-Otak Bandeng</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
                 </p>
 
               </div><!-- Menu Item -->
@@ -94,7 +93,7 @@
                 <a href="asset/kuejubung.png" class="glightbox"><img src="asset/kuejubung.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kue Jubung</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
 
               </div><!-- Menu Item -->
@@ -103,7 +102,7 @@
                 <a href="asset/bonggol.png" class="glightbox"><img src="asset/bonggol.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bonggolan</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
                 </p>
 
               </div><!-- Menu Item -->
@@ -112,7 +111,7 @@
                 <a href="asset/damar.png" class="glightbox"><img src="asset/damar.png" class="menu-img img-fluid" alt=""></a>
                 <h4> Kerajinan Damar Kurung</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
 
               </div><!-- Menu Item -->
 
@@ -120,7 +119,7 @@
                 <a href="asset/opak.png" class="glightbox"><img src="asset/opak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Opak</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
 
               </div><!-- Menu Item -->
@@ -141,7 +140,7 @@
                 <a href="asset/pudakgresik.jpg" class="glightbox"><img src="asset/pudakgresik.jpg" class="menu-img img-fluid" alt=""></a>
                 <h4>Nasi Krawu</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  
 
               </div><!-- Menu Item -->
 
@@ -149,10 +148,10 @@
                 <a href="kuliner/assets/img/menu/menu-item-2.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Aut Luia</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
                 <p class="price">
-                  $14.95
+                 
                 </p>
               </div><!-- Menu Item -->
 
@@ -160,10 +159,10 @@
                 <a href="kuliner/assets/img/menu/menu-item-3.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Est Eligendi</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
                 <p class="price">
-                  $8.95
+                
                 </p>
               </div><!-- Menu Item -->
 
@@ -171,10 +170,10 @@
                 <a href="kuliner/assets/img/menu/menu-item-4.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
                 </p>
                 <p class="price">
-                  $12.95
+                
                 </p>
               </div><!-- Menu Item -->
 
@@ -182,10 +181,10 @@
                 <a href="kuliner/assets/img/menu/menu-item-5.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
                 <p class="price">
-                  $12.95
+                 
                 </p>
               </div><!-- Menu Item -->
 
@@ -193,10 +192,10 @@
                 <a href="kuliner/assets/img/menu/menu-item-6.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Laboriosam Direva</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
                 <p class="price">
-                  $9.95
+                
                 </p>
               </div><!-- Menu Item -->
 
