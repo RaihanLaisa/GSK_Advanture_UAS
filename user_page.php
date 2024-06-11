@@ -68,8 +68,12 @@ if(!isset($_SESSION['user_name']))
                 <li>
                 <a href="#">Destinasi <i class="ti-angle-down"></i></a>
                 <ul class="submenu">
-                    <li><a href="Kategori_Pantai.html">Pantai</a></li>
-                    <li><a href="Sejarah">Sejarah</a></li>
+                    <li><a href="kategori_sejarah.php">Sejarah</a></li>
+                    <li><a href="Kategori_Bukit.php">Bukit</a></li>
+                    <li><a href="Kategori_Keagamaan.php">Keagamaan</a></li>
+                    <li><a href="Kategori_Kolam.php">Waterboom</a></li>
+                    <li><a href="Kategori_Alam.php">Alam</a></li>
+                    <li><a href="Kategori_Pantai.php">Pantai</a></li>
               </ul>
               </li>
               <li>

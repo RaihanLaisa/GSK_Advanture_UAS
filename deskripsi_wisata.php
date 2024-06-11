@@ -11,32 +11,22 @@
 
 <section class="deskripsi-wisata">
 
-    <h1 class="heading-title">DESKRIPSI WISATA</h1>
+    <h1 class="heading-title">Oleh-Oleh Khas Gresik</h1>
 
     <div class="container">
         <!-- Paket 1 -->
         <div class="box">
             <div class="image">
-                <img src="asset/girikedaton.jpg" alt="Gambar Wisata 1">
+                <img src="asset/pudak.png" alt="Gambar Wisata 1">
             </div>
             <div class="content">
-                <h3>Giri Kedaton</h3>
+                <h3>Kue Pudak</h3>
                 <style>
                     p {
                         text-align: justify;
                     }
                 </style>
-                <p>Kedaton (istana) atau pusat pemerintahan era Giri I yaitu Sunan Giri atau Raden Paku atau Raden Ainul Yaqin yang diteruskan secara turun temurun oleh para keturunannya. Giri Kedaton didirikan oleh Sunan Giri pada sekitar tahun 1487 M di Kota Gresik. Dipilihnya lokasi tersebut sebagai Kedaton Giri berdasarkan petunjuk Syeck Maulana Iskhak (Ayah Sunan Giri) atas dasar kes amaan segenggam tanah yang dibawa dari Samudra Pasai.</p>
-                <div class="box-above">
-                Harga Tiket : Rp 0 (gratis)
-                </div>
-                <div class="box-above">
-                Jam Buka : Setiap hari 24 jam
-                </div>
-                <div class="box-above">
-                Lokasi : Jl. Sunan Giri XIII, Pedukuhan, Kebomas, Kec. Kebomas, Kabupaten Gresik, Jawa Timur 61124, Indonesia
-                </div>
-                
+                <p>Pudak adalah makanan atau kue Kabupaten Gresik, Jawa Timur, Indonesia. Makanan ini terbuat dari bahan tepung beras, gula pasir/gula jawa dan santan kelapa yang dimasukkan kemasan yang disebut "Ope" yaitu pelepah daun pinang. Pudak juga ada yang berbahan sagu dan disebut Pudak Sagu.</p> 
             </div>
         </div>
 
@@ -46,22 +36,13 @@
                 <img src="asset/makamsunan.jpg" alt="Gambar Wisata 2">
             </div>
             <div class="content">
-                <h3>Makam Sunan Giri</h3>
+                <h3>Otak-Otak Bandeng</h3>
                 <style>
                     p {
                         text-align: justify;
                     }
                 </style>
-                <p>Sunan Giri merupakan putera dari Syekh Maulana lshaq dan Dewi Sekardadu (putri Raja Blambangan, Menak Sembuyu) yang lahir pada Tahun 7442 M, Sunan Giri wafat pada tahun 7506 M dan dimakamkan diatas bukit dalam cungkup berarsitektur khas Jawa yang sangat unik. Area makam ini sangat luas dan teduh karena dipenuhi dengan pepohonan berdaun rimbun di sekitarnya. Kawasan makam ini terbagi menjadi 3 bagian, yaitu area pintu masuk, area gapura, dan area inti, yaitu makam sunan.</p>
-                <div class="box-above">
-                Harga Tiket : Rp 0 (gratis)
-                </div>
-                <div class="box-above">
-                Jam Buka : Setiap hari 24 jam
-                </div>
-                <div class="box-above">
-                Lokasi : Jalan Sunan Giri, Dusun Giri Gajah, Desa Giri, Kecamatan Kebomas, Kabupaten Gresik, Jawa Timur
-                </div>
+                <p>Otak-otak bandeng merupakan salah satu makanan khas yang berasal dari Gresik, Jawa Timur. Otak-otak bandeng merupakan bentuk olahan yang mana daging ikan bandeng dikeluarkan tanpa merusak kulit ikan. Proses pembuatan otak-otak bandeng yang menjadi makanan khas Gresik ini cukup panjang dan memakan waktu yang lama serta menggunakan rempah-rempah pilihan khas Nusantara, seperti kemiri, bawang putih, cabai merah, jahe, daun jeruk, gula pasir, serta penyedap rasa. Otak-otak bandeng sangat mudah dijumpai di Gresik, biasanya dijual di pusat oleh-oleh khas Gresik di daerah pasar Gresik. Otak-otak bandeng ini memiliki daya awet sampai dua hari jika disimpan pada suhu ruang, jika produk ini tidak langsung dikonsumsi setelah dibuat maka sebaiknya disimpan pada lemari es, kemudian nanti jika ingin dikonsumsi tinggal digoreng saja.</p>
             </div>
         </div>
 
