@@ -16,6 +16,7 @@ if(!isset($_SESSION['user_name']))
    <link rel="stylesheet" href="css/user.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/dashboard.css">
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -78,10 +79,10 @@ if(!isset($_SESSION['user_name']))
               </li>
               <li>
               </li>     <!-- NAV BAR -->
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#Rekomendasi">Rekomendasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="logout.php" class="logout-btn">Logout</a></li>
+                <a href="logout.php" type="button" class="cta cta-header1">Logout</a
+               li>
              
             </ul>
         </div>
@@ -99,128 +100,53 @@ if(!isset($_SESSION['user_name']))
           <p>
             Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.
           </p>
-            <a href="deskripsi_wisata.php" class="tombol">MORE INFO</a>
+          
           </p>
         </div>
         <!-- ABOUT US -->
       </header>
       <main>
-        <section id="aboutus">
+      
         <div class="main-txt">
-          <h1><span>Gallary</span>Wisata</h1>
-        </div>
-            
-          </div>
-        </section>
-         <!-- Galerry -->
-        <section id="gallery">
-          <div><img src="asset/Banyu Urip Mangrove Center.png" /></div>
-          <div><img src="asset/Bukit Kapur Sekapuk.png" /></div>
-          <div><img src="asset/Giri kedaton.png" /></div>
-          <div><img src="asset/Makam Sunan Syeikh Maulana Malik Ibrahim.png" /></div>
-          <div><img src="asset/Masjid Jami'.png" /></div>
-          <div><img src="asset/Masjid KH Ahmad Dahlan.png" /></div>
-          <div><img src="asset/Pantai Delegan.png" /></div>
-          <div><img src="asset/Wagos Wisata Alam Gosari.png" /></div>
-        </section>
- 
-          <!-- Section Gallary Start -->
-    <section class="gallary" id="gallary">
-      <div class="container">
-        <div class="row" style="margin-top: 30px;">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Dynasty Water World.jpg" alt="" height="230px">
-            </div>
-          </div>
-          
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Makam Sunan Syeikh Maulana Malik Ibrahim.png" alt="" height="230px">
-            </div>
-          </div>
-          
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Pulau Mengare.jpg" alt="" height="230px">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row" style="margin-top: 30px;">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Bukit Kapur Gosari.jpg" alt="" height="230px">
-            </div>
-          </div>
-          
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Bajak Laut.jpg" alt="" height="230px">
-            </div>
-          </div>
-          
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="asset/Wagos Wisata Alam Gosari.jpg" alt="" height="230px">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- Section Gallary End -->
-        <section class="quote">
-          <div class="layar-dalam">
-            <p>Tak hanya sebatas tanah dan bangunan, 
-                Gresik adalah cerita kebesaran masa lalu yang terus hidup dalam setiap langkah ke depannya.</p>
-          </div>
          
+          <!-- Gal -->
+        
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <section id="header">
+    <div class="container">
+      <div class="nav">
+        <div class="logo"></div>
+        
+
+      <div class="hero">
+        <div class="hero-info">
+          <h1>Saatnya Berlibur !!</h1>
+          <p> Bingung cari tempat wisata yang bagus dimana ???
+          Disini kami menyediakan informasi seputar tempat wisata sebagai referensi untuk anda memilih
+              tempat untuk berlibur.</p>
+          <p> Tunggu apa lagii klik Start sekarang !! </p>    
+          <a href="deskripsi_wisata.php" type="button" class="cta cta-hero">Start</a>
+        </div>
+        <div class="hero-img"><img src="./asset/wisata.png" alt=""></div>
+      </div>
+      </div>
+  
   <!-- BLOG -->
     </section>
     <script src="js/main.js"></script>
 </body>
-        <section class="abuabu" id="blog">
-          <div class="layar-dalam">
-            <h3>Lastest Blog</h3>
-            <p class="ringkasan">
-              Sunan di Gresik
-            </p>
-            <div class="blog">
-              <div class="area">
-                <div
-                  class="gambar"
-                  style="background-image: url('asset/Sunangiri_blog.png')"
-                ></div>
-                <div class="text">
-                  <article>
-                    <h4><a href="#">Sunan giri?</a></h4>
-                    <p>
-                        Sunan Giri adalah salah satu tokoh yang memainkan peran penting dalam sejarah Islam di Indonesia, 
-                        terutama di Jawa Timur. Dikenal dengan nama aslinya, Raden Paku.
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div class="area">
-                <div
-                  class="gambar"
-                  style="background-image: url('asset/Sunanmalikibrahum_blog.png')"
-                ></div>
-                <div class="text">
-                  <article>
-                    <h4><a href="#">Sunan Malik Ibrahim?</a></h4>
-                    <p>
-                    Sunan Malik Ibrahim adalah salah satu tokoh penting dalam sejarah Islam di Indonesia, 
-                    terutama di Jawa Timur. Beliau dikenal sebagai seorang wali Allah yang berjasa dalam menyebarkan 
-                    agama Islam di wilayah tersebut.
-                    </p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
 <!-- Section Packages Start -->
 <section class="Rekomendasi" id="Rekomendasi">
@@ -469,6 +395,52 @@ if(!isset($_SESSION['user_name']))
     </section>
     <!-- Section Packages End -->
 
+    
+<section class="Gallery" id="aboutus">
+      
+        
+        <div class="main-txt">
+          <h1><span>Galarry</span>Wisata</h1>
+        
+      <!-- Galerry -->
+      <section id="gallery">
+        <div><img src="asset/Banyu Urip Mangrove Center.png" /></div>
+        <div><img src="asset/Bukit Kapur Sekapuk.png" /></div>
+        <div><img src="asset/Giri kedaton.png" /></div>
+        <div><img src="asset/Makam Sunan Syeikh Maulana Malik Ibrahim.png" /></div>
+        <div><img src="asset/Masjid Jami'.png" /></div>
+        <div><img src="asset/Masjid KH Ahmad Dahlan.png" /></div>
+        <div><img src="asset/Pantai Delegan.png" /></div>
+        <div><img src="asset/Wagos Wisata Alam Gosari.png" /></div>
+      </section>
+
+        <!-- Section Gallary Start -->
+  <section class="gallary" id="gallary">
+    <div class="container">
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="asset/Dynasty Water World.jpg" alt="" height="230px">
+          </div>
+        </div>
+        
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="asset/bukitjamur.jpg" alt="" height="230px">
+          </div>
+        </div>
+        
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="asset/Pulau Mengare.jpg" alt="" height="230px">
+          </div>
+        </div>
+      </div>
+
+
+
+  <!-- Section Gallary End -->
+      
   <!-- CONCTat -->
         </section>
       </main>
