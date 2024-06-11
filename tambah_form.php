@@ -19,17 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rating = htmlspecialchars(trim($_POST['rating']));
 
     // Handle file upload
-    if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
-        $file_tmp = $_FILES['foto']['tmp_name'];
-        $file_type = $_FILES['foto']['type'];
-        $file_data = addslashes(file_get_contents($file_tmp));
-        
-        if (!in_array($file_type, ['image/jpeg', 'image/png'])) {
-            $errors[] = "Only JPEG and PNG files are allowed";
-        }
-    } else {
-        $errors[] = "Foto is required";
-    }
+    $extensi = explode(".", $_FILES['foto']['name']);
+    $foto  = "foto-".round(microtime(true)).".".end($extensi);
+    $sumber  = $_FILES['foto']['tmp_name'];
+    $upload = move_uploaded_file($sumber,'foto/'.$foto);
 
     // Check for errors
     if (empty($nama_wisata)) {
@@ -52,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If no errors, insert into database
     if (empty($errors)) {
-        $query = "INSERT INTO user_admin (nama_wisata, kategori, foto, deskripsi_wisata, ulasan, rating) VALUES ('$nama_wisata', '$kategori', '$file_data', '$deskripsi_wisata', '$ulasan', '$rating')";
+        $query = "INSERT INTO user_admin (nama_wisata, kategori, foto, deskripsi_wisata, ulasan, rating) VALUES ('$nama_wisata', '$kategori', '$foto', '$deskripsi_wisata', '$ulasan', '$rating')";
         $result = mysqli_query($conn, $query);
 
         if ($result) {
@@ -162,7 +155,7 @@ form input[type="submit"]:hover {
         <input type="text" id="kategori" name="kategori" value="<?php echo $kategori; ?>">
         
         <label for="foto">Foto</label>
-        <input type="file" id="foto" name="foto">
+        <input type="file" id="inputGroupFile04" name="foto" value="<?php echo $foto; ?>">
         
         <label for="deskripsi_wisata">Deskripsi Wisata</label>
         <textarea id="deskripsi_wisata" name="deskripsi_wisata"><?php echo $deskripsi_wisata; ?></textarea>
@@ -178,4 +171,3 @@ form input[type="submit"]:hover {
 </div>
 </body>
 </html>
-
