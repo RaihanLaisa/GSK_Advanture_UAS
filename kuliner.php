@@ -40,7 +40,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+        <p><span>Periksa</span> <span class="description-title">Menu Popuer</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -77,8 +77,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $5.95
+
                 </p>
               </div><!-- Menu Item -->
 
@@ -88,9 +87,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $14.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -99,9 +96,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $8.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -110,31 +105,24 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $12.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/damar.png" class="glightbox"><img src="asset/damar.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Damar Kurung</h4>
+                <h4> Kerajinan Damar Kurung</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-6.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="asset/opak.png" class="glightbox"><img src="asset/opak.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Opak</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $9.95
-                </p>
+
               </div><!-- Menu Item -->
 
             </div>
