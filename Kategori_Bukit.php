@@ -33,8 +33,8 @@
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">WISATA</h1>
-                    <h2 class="masthead-subheading mb-0">ALAM</h2>
+                    <h1 class="masthead-heading mb-0">WISATA BUKIT</h1>
+                    <h2>Panorama bukit dari ketinggian yang memukau dan tempat yang menenangkan jiwa untuk para petualang</h2>
                     <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">More</a>
                 </div>
             </div>
@@ -96,32 +96,9 @@
         </section>
         <!-- Content section 3-->
         <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="asset/sitifatimah.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">Makam Siti Fatimah binti Maimun</h2>
-                            <p>Makam Fatimah binti Maimun diambil alih oleh Balai Pelestarian Peninggalan Purbakala (BP3) Jawa Timur. Area makam tersebut juga tidak diperbolehkan lagi untuk menjadi pemakaman umum, karena pemerintah menjadikannya sebagai situs cagar budaya. Makam Siti Fatimah berada di dalam kelambu, arsitekturnya juga mengikuti corak Hindu Budha sesuai dengan kerajaan yang berkuasa, saat ia meninggal. Gaya arsitektur dari makam Siti Fatimah binti Maimun yang ditemukan di daerah pantai utara Leran ini dipengaruhi oleh pengaruh kerajaan yang pada waktu itu masih sangat kuat.</p>
-                                <div class="box-above">
-                                Harga Tiket : Rp 0 (gratis)
-                                </div>
-                                <div class="box-above">
-                                Jam Buka : Setiap hari 24 jam
-                                </div>
-                                <div class="box-above">
-                                Lokasi : Jl. Raya Manyar, Pesantren, Peganden, Kec. Manyar, Kabupaten Gresik, Jawa Timur 61151</p>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Footer-->
         <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p></div>
+            <div class="container px-5"><p class="m-0 text-center text-white small">DESKRIPSI WISATA &copy; </p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
