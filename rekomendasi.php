@@ -41,10 +41,6 @@
       crossorigin="anonymous"
     ></script>
 
-   
-    
-
-
 
 <!-- Section Packages Start -->
 <section class="Rekomendasi" id="Rekomendasi">
