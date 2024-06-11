@@ -130,12 +130,10 @@ if(!isset($_SESSION['user_name']))
 
       <div class="hero">
         <div class="hero-info">
-          <h1>Saatnya Berlibur !!</h1>
-          <p> Bingung cari tempat wisata yang bagus dimana ???
-          Disini kami menyediakan informasi seputar tempat wisata sebagai referensi untuk anda memilih
-              tempat untuk berlibur.</p>
-          <p> Tunggu apa lagii klik Start sekarang !! </p>    
-          <a href="kuliner.php" type="button" class="cta cta-hero">Start</a>
+          <h1>Ayo Kulinerann !!</h1>
+          <p> Bingung cari makanan yang enak di daerah Gresik ???
+          Yuk lihat beberapa rekomendasi oleh - oleh dan kulineran enak.</p>
+          <a href="kuliner.php" type="button" class="cta cta-hero">Lihat</a>
         </div>
         <div class="hero-img"><img src="./asset/wisata.png" alt=""></div>
       </div>
