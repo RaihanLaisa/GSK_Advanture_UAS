@@ -498,55 +498,6 @@ nav ul li:hover > ul {
     transform: rotate(180deg);
 }
 
-/* Oleh-oleh Section */
-.section-padding {
-    padding: 60px 0;
-}
-
-.oleh-oleh {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.oleh-oleh h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.item {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.item img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.item h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.item p {
-    color: #777;
-}
-
 /* booky*/
 /* CSS untuk modal */
 .modal {
