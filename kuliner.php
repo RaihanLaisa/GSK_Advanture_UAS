@@ -39,9 +39,11 @@
     <section id="menu" class="menu section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-      <p><span>Periksa</span> <span class="description-title">Menu Popuer</span></p>
-      </div><!-- End Section Title -->
+      <div class="container section-title" style="margin-left: 550px;" data-aos="fade-up">
+        <p class="justify-content-center"><span>Periksa</span> <span class="description-title">Menu Populer</span></p>
+      </div>
+      <!-- End Section Title -->
+      
       <div class="container">
 
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -79,9 +81,7 @@
                     }
                 </style>
                 <p>Makanan ini terbuat dari bahan tepung beras, gula pasir/gula jawa dan santan kelapa yang dimasukkan kemasan yang disebut "Ope" yaitu pelepah daun pinang.</p>
-                
                 </p>
-
                 </p>
               </div><!-- Menu Item -->
 
