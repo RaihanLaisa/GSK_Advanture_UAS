@@ -75,7 +75,7 @@
                 <a href="asset/pudak2.png" class="glightbox"><img src="asset/pudak2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pudak</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
 
                 </p>
@@ -85,7 +85,6 @@
                 <a href="asset/otak.png" class="glightbox"><img src="asset/otak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Otak-Otak Bandeng</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
                 </p>
 
               </div><!-- Menu Item -->
@@ -94,7 +93,7 @@
                 <a href="asset/kuejubung.png" class="glightbox"><img src="asset/kuejubung.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kue Jubung</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
 
               </div><!-- Menu Item -->
@@ -103,7 +102,7 @@
                 <a href="asset/bonggol.png" class="glightbox"><img src="asset/bonggol.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bonggolan</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
                 </p>
 
               </div><!-- Menu Item -->
@@ -112,7 +111,7 @@
                 <a href="asset/kerupuk.png" class="glightbox"><img src="updateasset/kerupuk.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kerupuk Bandeng</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
 
               </div><!-- Menu Item -->
 
@@ -120,7 +119,7 @@
                 <a href="asset/opak.png" class="glightbox"><img src="asset/opak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Opak</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
 
               </div><!-- Menu Item -->
@@ -141,7 +140,7 @@
                 <a href="asset/nasikrawu.png" class="glightbox"><img src="asset/nasikrawu.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Nasi Krawu</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  
 
               </div><!-- Menu Item -->
 
@@ -149,45 +148,55 @@
                 <a href="asset/urap.png"  class="glightbox"><img src="asset/urap.png"  class="menu-img img-fluid" alt=""></a>
                 <h4>Urap-Urap</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
- 
+                <p class="price">
+                  $14.95
+                </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/segokarak.png" class="glightbox"><img src="asset/segokarak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sego Karak</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                 
                 </p>
-
+                <p class="price">
+                  $8.95
+                </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/segorumo.png" class="glightbox"><img src="asset/segorumo.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sego Rumo</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+               
                 </p>
-
+                <p class="price">
+                  $12.95
+                </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/klepon.png" class="glightbox"><img src="asset/klepon.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Klepon</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
-
+                <p class="price">
+                  $12.95
+                </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/martabak.png" class="glightbox"><img src="asset/martabak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Martabak Usus</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                
                 </p>
-
+                <p class="price">
+                  $9.95
+                </p>
               </div><!-- Menu Item -->
 
             </div>
