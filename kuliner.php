@@ -109,7 +109,7 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="asset/kerupuk.png" class="glightbox"><img src="asset/kerupuk.png" class="menu-img img-fluid" alt=""></a>
+                <a href="asset/kerupuk.png" class="glightbox"><img src="updateasset/kerupuk.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kerupuk Bandeng</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
