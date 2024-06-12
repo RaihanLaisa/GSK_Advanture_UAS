@@ -33,8 +33,8 @@
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">WISATA</h1>
-                    <h2 class="masthead-subheading mb-0">WATERBOOM</h2>
+                    <h1 class="masthead-heading mb-0">WISATA WATERBOOM</h1>
+                    <h2 >Petualangan Air yang segar dan menyenangkan nikmati keseruan bersantai di kolam renang terbaik</h2>
                     <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">More</a>
                 </div>
             </div>
@@ -120,7 +120,7 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p></div>
+            <div class="container px-5"><p class="m-0 text-center text-white small">DESKRIPSI WISATA &copy; </p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
