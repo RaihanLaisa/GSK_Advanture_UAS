@@ -109,8 +109,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="asset/damar.png" class="glightbox"><img src="asset/damar.png" class="menu-img img-fluid" alt=""></a>
-                <h4> Kerajinan Damar Kurung</h4>
+                <a href="asset/kerupuk.png" class="glightbox"><img src="asset/kerupuk.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Kerupuk Bandeng</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
 
@@ -138,7 +138,7 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="asset/pudakgresik.jpg" class="glightbox"><img src="asset/pudakgresik.jpg" class="menu-img img-fluid" alt=""></a>
+                <a href="asset/nasikrawu.png" class="glightbox"><img src="asset/nasikrawu.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Nasi Krawu</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
@@ -146,8 +146,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-2.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="asset/urap.png"  class="glightbox"><img src="asset/urap.png"  class="menu-img img-fluid" alt=""></a>
+                <h4>Urap-Urap</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -155,8 +155,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-3.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="asset/segokarak.png" class="glightbox"><img src="asset/segokarak.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Sego Karak</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -164,8 +164,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-4.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="asset/segorumo.png" class="glightbox"><img src="asset/segorumo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Sego Rumo</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -173,8 +173,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-5.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="asset/klepon.png" class="glightbox"><img src="asset/klepon.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Klepon</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -182,8 +182,8 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="kuliner/assets/img/menu/menu-item-6.png" class="glightbox"><img src="kuliner/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="asset/martabak.png" class="glightbox"><img src="asset/martabak.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Martabak Usus</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>

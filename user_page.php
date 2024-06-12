@@ -458,10 +458,6 @@ if(!isset($_SESSION['user_name']))
             Instagram
           </div>
         </div>
-        <div class="layar-dalam">
-          <div class="copyright">&copy; 2222 Gresik Discovery</div>
-        </div>
-      
     <script src="javascript.js"></script>
 </body>
 </html>
