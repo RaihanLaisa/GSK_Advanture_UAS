@@ -109,6 +109,7 @@ form label {
 }
 
 form input,
+form select,
 form textarea {
   margin-bottom: 15px;
   padding: 10px;
@@ -152,10 +153,18 @@ form input[type="submit"]:hover {
         <input type="text" id="nama_wisata" name="nama_wisata" value="<?php echo $nama_wisata; ?>">
         
         <label for="kategori">Kategori</label>
-        <input type="text" id="kategori" name="kategori" value="<?php echo $kategori; ?>">
+        <select id="kategori" name="kategori">
+            <option value="">Pilih Kategori</option>
+            <option value="Alam" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
+            <option value="Budaya" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
+            <option value="Kuliner" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
+            <option value="Sejarah" <?php echo ($kategori == 'Tempat keagamaan') ? 'selected' : ''; ?>>Tempat keagamaan</option>
+            <option value="Religi" <?php echo ($kategori == 'Renang') ? 'selected' : ''; ?>>Renang</option>
+            <option value="Religi" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
+        </select>
         
         <label for="foto">Foto</label>
-        <input type="file" id="inputGroupFile04" name="foto" value="<?php echo $foto; ?>">
+        <input type="file" id="foto" name="foto">
         
         <label for="deskripsi_wisata">Deskripsi Wisata</label>
         <textarea id="deskripsi_wisata" name="deskripsi_wisata"><?php echo $deskripsi_wisata; ?></textarea>

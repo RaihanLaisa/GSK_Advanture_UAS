@@ -2,7 +2,7 @@
 include('config.php');
 
 // Query to fetch data from the database
-$query = "SELECT * FROM user_admin";
+$query = "SELECT * FROM user_rating";
 $hasil = mysqli_query($conn, $query);
 
 if (!$hasil) {
@@ -20,26 +20,21 @@ if (!$hasil) {
 </head>
 <body>
 <div class="header">
-    <h1>Daftar Wisata</h1>
+    <h1>Rating Report</h1>
 </div>
 <nav>
     <a href="admin_page.php">Dashboard</a>
 </nav>
 <main>
     <div class="container">
-    <a href="tambah_form.php">Tambah Wisata</a>
     <table>
         <thead>
         <tr>
-                <th>No</th>
-                <th>Nama Wisata</th>
-                <th>Kategori</th>
-                <th>Foto</th>
-                <th>Deskripsi Wisata</th>
-                <th>Ulasan</th>
-                <th>Rating</th>
-                <th>Action</th>
-            </tr>
+            <th>No</th>
+            <th>User</th>
+            <th>Email</th>
+            <th>Rating</th>
+        </tr>
         </thead>
         <tbody>
             <?php
@@ -48,20 +43,9 @@ if (!$hasil) {
                 ?>
                 <tr>
                     <th scope="row"><?php echo $nomor; ?></th>
-                    <td><?php echo $data['nama_wisata']; ?></td>
-                    <td><?php echo $data['kategori']; ?></td>
-                    <td><img src="foto/<?php echo $data['foto']; ?>" width="160px"></td>
-                    <td><?php echo $data['deskripsi_wisata']; ?></td>
-                    <td><?php echo $data['ulasan']; ?></td>
+                    <td><?php echo $data['user']; ?></td>
+                    <td><?php echo $data['email']; ?></td>
                     <td><?php echo $data['rating']; ?></td>
-                    <td>
-                    <button class="btn edit" onclick="window.location.href='edit_form.php?id=<?php echo $data['id']; ?>'">
-                        <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn delete" onclick="if (confirm('Are you sure you want to delete this item?')) { window.location.href='delete.php?id=<?php echo $data['id']; ?>' }">
-                        <i class="fa fa-trash"></i>
-                    </button>
-                    </td>
                 </tr>
                 <?php
                 $nomor++;
