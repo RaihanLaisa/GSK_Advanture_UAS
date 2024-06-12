@@ -148,10 +148,6 @@
                 <a href="asset/urap.png"  class="glightbox"><img src="asset/urap.png"  class="menu-img img-fluid" alt=""></a>
                 <h4>Urap-Urap</h4>
                 <p class="ingredients">
-                
-                </p>
-                <p class="price">
-                  $14.95
                 </p>
               </div><!-- Menu Item -->
 
@@ -159,21 +155,13 @@
                 <a href="asset/segokarak.png" class="glightbox"><img src="asset/segokarak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sego Karak</h4>
                 <p class="ingredients">
-                 
-                </p>
-                <p class="price">
-                  $8.95
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/segorumo.png" class="glightbox"><img src="asset/segorumo.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Sego Rumo</h4>
+                <h4>Sego Roomo</h4>
                 <p class="ingredients">
-               
-                </p>
-                <p class="price">
-                  $12.95
                 </p>
               </div><!-- Menu Item -->
 
@@ -181,10 +169,6 @@
                 <a href="asset/klepon.png" class="glightbox"><img src="asset/klepon.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Klepon</h4>
                 <p class="ingredients">
-                
-                </p>
-                <p class="price">
-                  $12.95
                 </p>
               </div><!-- Menu Item -->
 
@@ -192,10 +176,6 @@
                 <a href="asset/martabak.png" class="glightbox"><img src="asset/martabak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Martabak Usus</h4>
                 <p class="ingredients">
-                
-                </p>
-                <p class="price">
-                  $9.95
                 </p>
               </div><!-- Menu Item -->
 
