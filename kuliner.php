@@ -151,9 +151,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $14.95
-                </p>
+ 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -162,9 +160,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $8.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -173,9 +169,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $12.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -184,9 +178,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $12.95
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -195,9 +187,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
-                  $9.95
-                </p>
+
               </div><!-- Menu Item -->
 
             </div>
