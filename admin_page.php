@@ -43,9 +43,15 @@ if (!isset($_SESSION['admin_name'])) {
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="formulir.php">
 					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
+					<span class="text">Rating Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="laporan_admin.php">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Report</span>
 				</a>
 			</li>
 		</ul>
@@ -86,86 +92,85 @@ if (!isset($_SESSION['admin_name'])) {
 		<!-- NAVBAR -->
 
 		<!-- MAIN -->
-		<main>
-			<div class="head-title">
-				<div class="left">
-					<h1>Dashboard</h1>
-					<ul class="breadcrumb">
-						<li>
-							<a href="#">Dashboard</a>
-						</li>
-						<li><i class='bx bx-chevron-right' ></i></li>
-						<li>
-							<a class="active" href="#">Home</a>
-						</li>
-					</ul>
-				</div>
+<main>
+	<div class="head-title">
+		<div class="left">
+			<h1>Dashboard</h1>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li><i class='bx bx-chevron-right' ></i></li>
+					<li>
+						<a class="active" href="#">Home</a>
+					</li>
+				</ul>
+			</div>
 				<a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Download PDF</span>
+				<i class='bx bxs-cloud-download' ></i>
+				<span class="text">Download PDF</span>
 				</a>
 			</div>
 
 
-      <div class="table-data">
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-    <script>
-        const ctx1 = document.getElementById('myChart').getContext('2d');
+	<div class="table-data">
+		<div>
+			<canvas id="myChart"></canvas>
+		</div>
+		<script>
+			const ctx1 = document.getElementById('myChart').getContext('2d');
 
-        new Chart(ctx1, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-</div>
+			new Chart(ctx1, {
+				type: 'bar',
+				data: {
+					labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+					datasets: [{
+						label: '# of Votes',
+						data: [12, 19, 3, 5, 2, 3],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true
+						}
+					}
+				}
+			});
+		</script>
+	</div>
 
-<div class="table-data">
-    <div>
-        <canvas id="chartku"></canvas>
-    </div>
-    <script>
-        const ctx2 = document.getElementById('chartku').getContext('2d');
+	<div class="table-data">
+		<div>
+			<canvas id="chartku"></canvas>
+		</div>
+		<script>
+			const ctx2 = document.getElementById('chartku').getContext('2d');
 
-        new Chart(ctx2, {
-            type: 'line',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-</div>
+			new Chart(ctx2, {
+				type: 'line',
+				data: {
+					labels: ['Pantai', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+					datasets: [{
+						label: '# of Votes',
+						data: [1, 2, 3, 4, 5],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true
+						}
+					}
+				}
+			});
+		</script>
+	</div>
+</section>
+</main>
 
-		</main>
-		<!-- MAIN -->
-	</section>
 <script src="js/admin.js" defer></script>
 </body>
 </html>
