@@ -39,10 +39,11 @@
     <section id="menu" class="menu section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <p><span>Periksa</span> <span class="description-title">Menu Popuer</span></p>
-      </div><!-- End Section Title -->
-
+      <div class="container section-title" style="margin-left: 550px;" data-aos="fade-up">
+        <p class="justify-content-center"><span>Periksa</span> <span class="description-title">Menu Populer</span></p>
+      </div>
+      <!-- End Section Title -->
+      
       <div class="container">
 
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -65,7 +66,6 @@
           <div class="tab-pane fade active show" id="menu-starters">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
               <h3>Oleh-Oleh</h3>
             </div>
 
@@ -75,9 +75,13 @@
                 <a href="asset/pudak2.png" class="glightbox"><img src="asset/pudak2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pudak</h4>
                 <p class="ingredients">
-                
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Makanan ini terbuat dari bahan tepung beras, gula pasir/gula jawa dan santan kelapa yang dimasukkan kemasan yang disebut "Ope" yaitu pelepah daun pinang.</p>
                 </p>
-
                 </p>
               </div><!-- Menu Item -->
 
@@ -85,6 +89,9 @@
                 <a href="asset/otak.png" class="glightbox"><img src="asset/otak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Otak-Otak Bandeng</h4>
                 <p class="ingredients">
+                <p>Bentuk olahan daging ikan bandeng dikeluarkan tanpa merusak kulit ikan dan proses pembuatan otak-otak bandeng cukup panjang serta menggunakan rempah-rempah pilihan khas Nusantara.</p>
+                </p>
+
                 </p>
 
               </div><!-- Menu Item -->
@@ -93,6 +100,13 @@
                 <a href="asset/kuejubung.png" class="glightbox"><img src="asset/kuejubung.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kue Jubung</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>jajanan yang mempunyai bentuk seperti jenang dan terbuat dari ketan hitam yang ditaburi biji wijen di atasnya dan ditempatkan di selongsong warna putih yang terbuat dari daun pinang muda.</p>
+                
                  
                 </p>
 
@@ -102,7 +116,12 @@
                 <a href="asset/bonggol.png" class="glightbox"><img src="asset/bonggol.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bonggolan</h4>
                 <p class="ingredients">
-               
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p> Jajanan berbentuk lonjong yang terbuat dari bahan dasar daging ikan yang dicampur tepung kanji yang ditambah dengan garam dan bawang putih.</p>
                 </p>
 
               </div><!-- Menu Item -->
@@ -111,15 +130,27 @@
                 <a href="asset/kerupuk.png" class="glightbox"><img src="asset/kerupuk.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Kerupuk Bandeng</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Terbuat dari daging bandeng yang lezat dan disajikan dengan petis khas gresik rasanya gurih dan pedas cocok disantap sebagai camilan</p>
+                
                
-
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/opak.png" class="glightbox"><img src="asset/opak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Opak</h4>
                 <p class="ingredients">
-                 
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Terbuat dari ubi kayu (singkong) yang digiling dan dibumbui, dibentuk bundar dan pipih, dijemur hingga kering.</p>
+                
                 </p>
 
               </div><!-- Menu Item -->
@@ -130,7 +161,6 @@
           <div class="tab-pane fade" id="menu-breakfast">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
               <h3>Kuliner</h3>
             </div>
 
@@ -140,6 +170,12 @@
                 <a href="asset/nasikrawu.png" class="glightbox"><img src="asset/nasikrawu.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Nasi Krawu</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Campuran dari nasi dan daging sapi, Krawu menurut cerita berasal dari kata “krawukan“, artinya ambil nasi atau lauk dengan jari tangan langsung, tanpa alat bantu sendok atau lainnya.</p>
                   
 
               </div><!-- Menu Item -->
@@ -148,6 +184,12 @@
                 <a href="asset/urap.png"  class="glightbox"><img src="asset/urap.png"  class="menu-img img-fluid" alt=""></a>
                 <h4>Urap-Urap</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>hidangan salad tradisional. Sayur yang dimasak (direbus) dicampur dengan bumbu kelapa parut yang memiliki citarasa yang khas.</p>
                 </p>
               </div><!-- Menu Item -->
 
@@ -155,6 +197,12 @@
                 <a href="asset/segokarak.png" class="glightbox"><img src="asset/segokarak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sego Karak</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Makanan ini terdiri dari nasi yang dikeringkan dan disajikan dengan berbagai lauk pauk, seperti ketan hitam, poya, dan gorengan.</p>
                 </p>
               </div><!-- Menu Item -->
 
@@ -162,6 +210,12 @@
                 <a href="asset/segorumo.png" class="glightbox"><img src="asset/segorumo.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sego Roomo</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Berisi bahan-bahan seperti nasi atau lontong diletakkan di pincuk (tempat makan dari daun pisang), di atasnya diberi sayuran bayam rebus dan kerupuk yang sudah diremas, kemudian dilapisi dengan bubur rumo (bubur halus berwarna oranye).</p>
                 </p>
               </div><!-- Menu Item -->
 
@@ -169,6 +223,12 @@
                 <a href="asset/klepon.png" class="glightbox"><img src="asset/klepon.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Klepon</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p> Jajanan tradisional Indonesia yang umumnya terbuat dari tepung ketan putih yang dibentuk seperti bola-bola kecil dengan isi gula merah dan ditaburi parutan kelapa</p>
                 </p>
               </div><!-- Menu Item -->
 
@@ -176,6 +236,14 @@
                 <a href="asset/martabak.png" class="glightbox"><img src="asset/martabak.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Martabak Usus</h4>
                 <p class="ingredients">
+                <style>
+                    p {
+                        text-align: justify;
+                    }
+                </style>
+                <p>Martabak ini berisi bihun goreng dan usus masak kecap yang bumbunya meresap serta terasa lebih nikmat jika disantap bersama sambal petis.
+
+                </p>
                 </p>
               </div><!-- Menu Item -->
 
