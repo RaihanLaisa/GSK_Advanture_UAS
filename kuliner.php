@@ -139,13 +139,10 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="asset/pudakgresik.jpg" class="glightbox"><img src="asset/pudakgresik.jpg" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <h4>Nasi Krawu</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  pudak
-                </p>
+
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
