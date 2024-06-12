@@ -81,6 +81,7 @@ if(!isset($_SESSION['user_name']))
               </li>     <!-- NAV BAR -->
                 <li><a href="#Rekomendasi">Rekomendasi</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="formulir.php">Rating</a></li>
                 <a href="logout.php" type="button" class="cta cta-header1">Logout</a
                li>
              

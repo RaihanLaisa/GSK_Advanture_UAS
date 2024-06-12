@@ -5,16 +5,18 @@ include('config.php');
 $user = '';
 $email = '';
 $rating = '';
+$kategori = '';
 $errors = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input
     $user = htmlspecialchars(trim($_POST['user']));
     $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $kategori = htmlspecialchars(trim($_POST['kategori']));
     $rating = htmlspecialchars(trim($_POST['rating']));
 
     if (empty($errors)) {
-        $query = "INSERT INTO user_rating (user, email, rating) VALUES ('$user', '$email', '$rating')";
+        $query = "INSERT INTO user_rating (user, email, kategori, rating) VALUES ('$user', '$email', '$kategori', '$rating')";
         $result = mysqli_query($conn, $query);
 
         if ($result) {
@@ -36,17 +38,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <header>
-        <h1>Rating</h1>
+        <h1>Review seluruh kategori</h1>
     </header>
     <nav>
         <a href="admin_page.php">Dashboard</a>
     </nav>
-    <form action="rating.php" method="post">
+    <form action="formulir.php" method="post">
     <label for="user">User:</label>
     <input type="text" id="user" name="user" required><br><br>
     
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required><br><br>
+
+    <label for="kategori">Kategori</label>
+    <select id="kategori" name="kategori">
+            <option value="Alam" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
+            <option value="Budaya" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
+            <option value="Kuliner" <?php echo ($kategori == 'Keagamaan') ? 'selected' : ''; ?>>Keagamaan</option>
+            <option value="Sejarah" <?php echo ($kategori == 'Water Boom') ? 'selected' : ''; ?>>Waterboom</option>
+            <option value="Religi" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
+            <option value="Religi" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
+    </select>
     
     <label for="rating">Rating:</label>
     <select id="rating" name="rating" required>

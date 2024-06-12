@@ -43,12 +43,6 @@ if (!isset($_SESSION['admin_name'])) {
 				</a>
 			</li>
 			<li>
-				<a href="formulir.php">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Rating Users</span>
-				</a>
-			</li>
-			<li>
 				<a href="laporan_admin.php">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Report</span>
