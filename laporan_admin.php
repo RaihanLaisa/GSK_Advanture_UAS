@@ -16,7 +16,7 @@ if (!$hasil) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/laporan.css">
 </head>
 <body>
 <div class="header">
@@ -33,6 +33,7 @@ if (!$hasil) {
             <th>No</th>
             <th>User</th>
             <th>Email</th>
+            <th>Kategori</th>
             <th>Rating</th>
         </tr>
         </thead>
@@ -45,6 +46,7 @@ if (!$hasil) {
                     <th scope="row"><?php echo $nomor; ?></th>
                     <td><?php echo $data['user']; ?></td>
                     <td><?php echo $data['email']; ?></td>
+                    <td><?php echo $data['kategori']; ?></td>
                     <td><?php echo $data['rating']; ?></td>
                 </tr>
                 <?php

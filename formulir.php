@@ -1,6 +1,12 @@
 <?php
 include('config.php');
 
+session_start();
+
+if(!isset($_SESSION['user_name'])){
+   header('location:login_form.php');
+}
+
 // Initialize variables
 $user = '';
 $email = '';
@@ -41,17 +47,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Review seluruh kategori</h1>
     </header>
     <nav>
-        <a href="admin_page.php">Dashboard</a>
+        <a href="user_page.php">Dashboard</a>
     </nav>
-    <form action="formulir.php" method="post">
+    <form action="rating.php" method="post">
     <label for="user">User:</label>
-    <input type="text" id="user" name="user" required><br><br>
+    <input type="text" id="user" name="user" c<?php echo $_SESSION['user_name'] ?>><br><br>
     
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <input type="email" id="email" name="email" class="form-control" readonly><br><br>
 
     <label for="kategori">Kategori</label>
-    <select id="kategori" name="kategori">
+    <select id="kategori" name="kategori" class="form-control" required>
             <option value="Alam" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
             <option value="Budaya" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
             <option value="Kuliner" <?php echo ($kategori == 'Keagamaan') ? 'selected' : ''; ?>>Keagamaan</option>

@@ -287,9 +287,11 @@ section.quote .layar-dalam p {
 
 /* Footer styles */
 footer {
-  padding: 50px 0;
-  background-color: #1c3829;
-  color: #fff;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
 }
 footer .layar-dalam {
   display: flex;

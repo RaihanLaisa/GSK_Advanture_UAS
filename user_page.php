@@ -459,6 +459,6 @@ if(!isset($_SESSION['user_name']))
             Instagram
           </div>
         </div>
-    <script src="javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
