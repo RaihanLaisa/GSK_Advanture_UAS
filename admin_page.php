@@ -46,8 +46,8 @@ if (!$hasil) {
 			</li>
 			<li>
 				<a href="table.php">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Ta</span>
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Tambah wisata</span>
 				</a>
 			</li>
 			<li>
