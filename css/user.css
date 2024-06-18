@@ -628,17 +628,17 @@ a {
   text-decoration: none;
   color: black;
 }
-
 .cta {
-  padding: 10px 45px;
-  border-radius: 50px;
-  background-color: green;
+  padding: 5px 7px; /* Mengurangi padding vertikal untuk membuat tombol lebih kecil */
+  border-radius: 80px; /* Mengurangi border-radius untuk ukuran yang lebih kecil */
+  background-color: rgb(41, 96, 41);
   color: white;
-  font-weight: 700;
-  -webkit-box-shadow: -2px 2px 20px 0px #0000001f;
-          box-shadow: -2px 2px 20px 0px #0000001f;
-  font-size: .9rem;
+  font-weight: 600;
+  -webkit-box-shadow: -1px 1px 10px 0px #0000001f;
+          box-shadow: -1px 1px 10px 0px #0000001f; /* Mengurangi shadow untuk ukuran yang lebih kecil */
+  font-size: 0.8rem; /* Mengurangi ukuran font */
 }
+
 
 
 #header {
