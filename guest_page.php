@@ -83,7 +83,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              
+
           </ul>
           
           <a class="btn btn-light ms-2 bg-success" href="register_form.php">Registrasi</a>
@@ -99,8 +99,6 @@
       aria-hidden="true"
     >
       
-             
-            
              
               
               >

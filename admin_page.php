@@ -164,6 +164,7 @@ if (!$hasil) {
         <tr>
             <th>No</th>
             <th>User</th>
+			<th>ulasan</th>
             <th>Kategori</th>
             <th>Rating</th>
         </tr>
@@ -176,6 +177,7 @@ if (!$hasil) {
                 <tr>
                     <th scope="row"><?php echo $nomor; ?></th>
                     <td><?php echo $data['user']; ?></td>
+					<td><?php echo $data['ulasan']; ?></td>
                     <td><?php echo $data['kategori']; ?></td>
                     <td><?php echo $data['rating']; ?></td>
                 </tr>

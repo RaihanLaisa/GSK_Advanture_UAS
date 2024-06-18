@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" id="user" name="user" value="<?php echo $_SESSION['user_name']; ?>" readonly><br><br>
 
         <label for="ulasan">ulasan</label>
-        <textarea id="ulasan" name="ulasan"><?php echo $ulasan; ?></textarea>
+         <textarea id="ulasan" name="ulasan" required><?php echo htmlspecialchars($ulasan); ?></textarea>
 
     <label for="kategori">Kategori</label>
     <select id="kategori" name="kategori" class="form-control" required>
