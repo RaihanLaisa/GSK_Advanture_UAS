@@ -45,6 +45,12 @@ if (!$hasil) {
 				</a>
 			</li>
 			<li>
+				<a href="table.php">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Ta</span>
+				</a>
+			</li>
+			<li>
 				<a href="laporan_admin.php">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Report</span>
