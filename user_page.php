@@ -65,7 +65,7 @@ if(!isset($_SESSION['user_name']))
             </a>
             <ul>   <!--NAV BAR-->
                 <li><a href="#home">Home</a></li>
-                <li><a href="#aboutus">Galarry</a></li>
+                <li><a href="#aboutus">Gallery</a></li>
                 <li>
                 <a href="#">Destinasi <i class="ti-angle-down"></i></a>
                 <ul class="submenu">
@@ -398,7 +398,7 @@ if(!isset($_SESSION['user_name']))
       
         
         <div class="main-txt">
-          <h1><span>Galarry</span>Wisata</h1>
+          <h1><span>Gallery</span>Wisata</h1>
         
       <!-- Galerry -->
       <section id="gallery">
