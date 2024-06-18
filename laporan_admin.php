@@ -15,18 +15,83 @@ if (!$hasil) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabel</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/laporan.css">
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-<div class="header">
-    <h1>Rating Report</h1>
-</div>
-<nav>
-    <a href="admin_page.php">Dashboard</a>
-</nav>
+<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Gresik Discovery</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="admin_page.php">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Report</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="logout.php" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
 <main>
-    <div class="container">
+	<div class="head-title">
+		<div class="left">
+			<h1>Dashboard</h1>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li><i class='bx bx-chevron-right' ></i></li>
+					<li>
+						<a class="active" href="#">Home</a>
+					</li>
+				</ul>
+
+    <div class="table-data">
+    <div class="order">
     <table>
         <thead>
         <tr>
@@ -55,28 +120,9 @@ if (!$hasil) {
     </table>
     <a href="cetak.php" target="_blank"><button class="btn btn-primary">Cetak Laporan</button>
     </div>
+    </div>
+</section>
 </main>
-
-<footer id="contact">
-    <div class="layar-dalam">
-        <div>
-            <h5>Info</h5>
-            Jl. Proklamasi Biologi no. 12
-        </div>
-        <div>
-            <h5>Contact</h5>
-            <p>Kelompok 10, Surabaya, Rungkut</p>
-            <p>081249228875</p>
-            <p>10Group.com</p>
-        </div>
-        <div>
-            <h5>Connect</h5>
-            <p>Instagram</p>
-        </div>
-    </div>
-    <div class="layar-dalam">
-        <div class="copyright">&copy; 2024 Gresik Discovery</div>
-    </div>
-</footer>
+<script src="js/admin.js" defer></script>
 </body>
 </html>

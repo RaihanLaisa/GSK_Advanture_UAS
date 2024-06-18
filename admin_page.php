@@ -10,6 +10,14 @@ if (!isset($_SESSION['admin_name'])) {
     header('location:login_form.php');
 }
 
+$query = "SELECT * FROM user_rating";
+$hasil = mysqli_query($conn, $query);
+
+if (!$hasil) {
+    die("Query Error: " . mysqli_errno($conn) . " - " . mysqli_error($conn));
+}
+?>
+
 ?>
 
 <!DOCTYPE html>
@@ -34,12 +42,6 @@ if (!isset($_SESSION['admin_name'])) {
 				<a href="#">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="table.php">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">paket wisata</span>
 				</a>
 			</li>
 			<li>
@@ -99,29 +101,36 @@ if (!isset($_SESSION['admin_name'])) {
 						<a class="active" href="#">Home</a>
 					</li>
 				</ul>
-			</div>
-				<a href="#" class="btn-download">
-				<i class='bx bxs-cloud-download' ></i>
-				<span class="text">Download PDF</span>
-				</a>
-			</div>
-
 
 	<div class="table-data">
 		<div>
 			<canvas id="myChart"></canvas>
 		</div>
-		<script>
-			const ctx1 = document.getElementById('myChart').getContext('2d');
+    	<script>
+			// Function to fetch data from PHP script
+			async function fetchData() {
+				const response = await fetch('fetch_data.php');
+				const data = await response.json();
+				return data;
+			}
 
-			new Chart(ctx1, {
+			// Function to create chart
+			async function createChart() {
+			const data = await fetchData();
+			const categories = data.map(item => item.kategori);
+			const ratings = data.map(item => item.total_rating); // Menggunakan total_rating
+
+			const ctx = document.getElementById('myChart').getContext('2d');
+			new Chart(ctx, {
 				type: 'bar',
 				data: {
-					labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+					labels: categories,
 					datasets: [{
-						label: '# of Votes',
-						data: [12, 19, 3, 5, 2, 3],
-						borderWidth: 1
+						label: 'Total Ratings',
+						data: ratings,
+						borderWidth: 1,
+						backgroundColor: 'rgba(75, 192, 192, 0.2)',
+						borderColor: 'rgba(75, 192, 192, 1)',
 					}]
 				},
 				options: {
@@ -132,9 +141,45 @@ if (!isset($_SESSION['admin_name'])) {
 					}
 				}
 			});
-		</script>
+		}
+ 
+
+			// Call the function to create the chart
+			createChart();
+			</script>
 	</div>
 	</script>
+	</div>
+
+<div class="table-data">
+	<div class="order">
+    <table>
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>User</th>
+            <th>Kategori</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php
+            $nomor = 1;
+            while ($data = mysqli_fetch_array($hasil)) {
+                ?>
+                <tr>
+                    <th scope="row"><?php echo $nomor; ?></th>
+                    <td><?php echo $data['user']; ?></td>
+                    <td><?php echo $data['kategori']; ?></td>
+                    <td><?php echo $data['rating']; ?></td>
+                </tr>
+                <?php
+                $nomor++;
+            }
+            ?>
+        </tbody>
+    </table>
+    </div>
 	</div>
 </section>
 </main>

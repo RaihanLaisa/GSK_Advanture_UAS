@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Guarding against SQL injection
     $user = mysqli_real_escape_string($conn, $user);
-    $kategori = htmlspecialchars(trim($_POST['kategori']));
+    $kategori = mysqli_real_escape_string($conn, $kategori); // tambahkan escape string untuk kategori
     $rating = mysqli_real_escape_string($conn, $rating);
     
-    $insert_query = "INSERT INTO user_rating (user, email, rating) VALUES ('$user', '$email', '$rating')";
+    $insert_query = "INSERT INTO user_rating (user, kategori, rating) VALUES ('$user', '$kategori', '$rating')"; // tambahkan kategori ke dalam query
     
     if (mysqli_query($conn, $insert_query)) {
         echo "Thanks! Your rating has been submitted.";
