@@ -1,3 +1,22 @@
+<?php
+include('config.php');
+
+// Query to fetch data from the database where category is 'alam'
+$query = "SELECT * FROM user_admin WHERE kategori = 'bukit'";
+$hasil = mysqli_query($conn, $query);
+
+if (!$hasil) {
+    die("Query Error: " . mysqli_errno($conn) . " - " . mysqli_error($conn));
+}
+
+// Fetch the column names
+$columns = array();
+$result = mysqli_query($conn, "SHOW COLUMNS FROM user_admin");
+while ($row = mysqli_fetch_assoc($result)) {
+    $columns[] = $row['Field'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,52 +66,39 @@
         <section id="scroll">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-thumbnail rounded-circle" src="asset/bukitjamurbaru.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">Bukit Jamur</h2>
-                            <p>Para wisatawan seringkali datang ke Bukit Jamur untuk menikmati pesona alam yang khas. Bukit Jamur terletak di area seluas 3 hektar. Beberapa tahun terkhir, Bukit Jamur menjadi magnet bagi pecinta alam dan fotografi dengan batuan uniknya yang membentuk jamur, hasil dari pengikisan alam selama bertahun-tahun. Hasilnya pun sangat estetik dan indah ketika difoto. Awalnya merupakan bekas area penambangan kapur yang tidak beroperasi. Bukit Jamur kini menjadi destinasi wisata yang memukau dengan sekitar 40 batu jamur, masing-masing memiliki tinggi yang bervariasi, mencapai ketinggian tertinggi 7 meter.</p> 
-                            <div class="box-above">
-                            Harga Tiket : Rp 0 (gratis)
-                            </div>
-                            <div class="box-above">
-                            Jam Buka : Setiap hari, jam 06.00-17.00
-                            </div>
-                            <div class="box-above">
-                            Lokasi : Area Sawah/Kebun, Bungah, Kec. Bungah, Kabupaten Gresik, Jawa Timur 61152
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+            $sectionCount = 1;
+            while ($data = mysqli_fetch_array($hasil, MYSQLI_ASSOC)) {
+                $foto = htmlspecialchars($data['foto']);
+                $nama_wisata = htmlspecialchars($data['nama_wisata']);
+                $deskripsi_wisata = htmlspecialchars($data['deskripsi_wisata']);
+
+                if ($sectionCount % 2 == 0) {
+                    echo '<div class="row gx-5 align-items-center">';
+                    echo '<div class="col-lg-6"><div class="p-5"><img class="img-fluid rounded-circle" src="foto/' . $foto . '" alt="Image" /></div></div>';
+                    echo '<div class="col-lg-6"><div class="p-5">';
+                } else {
+                    echo '<div class="row gx-5 align-items-center">';
+                    echo '<div class="col-lg-6 order-lg-2"><div class="p-5"><img class="img-fluid rounded-circle" src="foto/' . $foto . '" alt="Image" /></div></div>';
+                    echo '<div class="col-lg-6 order-lg-1"><div class="p-5">';
+                }
+                echo '<h2 class="display-4">' . $nama_wisata . '</h2>';
+                echo '<p>' . $deskripsi_wisata . '</p>';
+
+                // Dynamically display other fields
+                foreach ($columns as $column) {
+                    if ($column != 'foto' && $column != 'nama_wisata' && $column != 'deskripsi_wisata' && $column != 'kategori') {
+                        $value = htmlspecialchars($data[$column]);
+                        echo '<div class="box-above">' . ucfirst(str_replace('_', ' ', $column)) . ': ' . $value . '</div>';
+                    }
+                }
+
+                echo '</div></div></div>';
+                $sectionCount++;
+            }
+            ?>
             </div>
         </section>
-        <!-- Content section 2-->
-        <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="asset/Bukit Kapur Sekapuk.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="p-5">
-                            <h2 class="display-4">Bukit Kapur Sekapuk Setigi</h2>
-                            <p>Bukit Kapur Sekapuk Setigi awalnya merupakan area tambang batu kapur. Meski demikian, tidak akan mengganggu wisatawan. Setigi adalah kepanjangan dari selo, tirto, giri. Bahasa Sansekerta tersebut masing-masing berarti batu, air, gunung. Sedangkan Sekapuk, diambil dari nama desa di mana Bukit Kapur Setigi berada. Wisata ini digagas oleh Abdul Halim, Kepala Desa Sekapuk atau lebih dikenal Ki Begawan Setigi. Meski tempatnya perlu masuk jalan desa, tapi gak jauh dari jalan utama dan sudah dilengkapi papan petunjuk.</p>
-                            <div class="box-above">
-                            Harga Tiket : Rp 10.000-30.000
-                            </div>
-                            <div class="box-above">
-                            Jam Buka : jam 08.00 s/d 17.00 WIB (Senin-Jumat), jam 08.00 s/d 18.00 WIB (Sabtu-Minggu)
-                            </div>
-                            <div class="box-above">
-                            Lokasi : Desa, Area Sawah, Sekapuk, Kec. Panceng, Kabupaten Gresik, Jawa Timur 61154
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- Content section 3-->
         <section>
