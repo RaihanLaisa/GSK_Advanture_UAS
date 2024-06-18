@@ -33,6 +33,12 @@ if (!$hasil) {
 				</a>
 			</li>
 			<li>
+				<a href="table.php">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Tambah wisata</span>
+				</a>
+			</li>
+			<li>
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Report</span>

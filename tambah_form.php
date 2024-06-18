@@ -155,11 +155,12 @@ form input[type="submit"]:hover {
         <label for="kategori">Kategori</label>
         <select id="kategori" name="kategori">
             <option value="">Pilih Kategori</option>
-            <option value="Alam" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
-            <option value="Budaya" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
-            <option value="Sejarah" <?php echo ($kategori == 'keagamaan') ? 'selected' : ''; ?>>keagamaan</option>
-            <option value="Religi" <?php echo ($kategori == 'Renang') ? 'selected' : ''; ?>>Renang</option>
-            <option value="Religi" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
+            <option value="Sejarah" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
+            <option value="Bukit" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
+            <option value="Keagamaan" <?php echo ($kategori == 'keagamaan') ? 'selected' : ''; ?>>keagamaan</option>
+            <option value="Renang" <?php echo ($kategori == 'Renang') ? 'selected' : ''; ?>>Renang</option>
+            <option value="Alam" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
+            <option value="Pantai" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
         </select>
         
         <label for="foto">Foto</label>
