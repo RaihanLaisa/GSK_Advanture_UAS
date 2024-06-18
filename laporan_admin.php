@@ -1,15 +1,7 @@
 <?php
+include('config.php');
 
-use LDAP\Result;
-
-@include 'config.php';
-
-session_start();
-
-if (!isset($_SESSION['admin_name'])) {
-    header('location:login_form.php');
-}
-
+// Query to fetch data from the database
 $query = "SELECT * FROM user_rating";
 $hasil = mysqli_query($conn, $query);
 
@@ -17,18 +9,14 @@ if (!$hasil) {
     die("Query Error: " . mysqli_errno($conn) . " - " . mysqli_error($conn));
 }
 ?>
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin page</title>
+    <title>Tabel</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
@@ -39,13 +27,13 @@ if (!$hasil) {
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="#">
+				<a href="admin_page.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="laporan_admin.php">
+				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Report</span>
 				</a>
@@ -102,57 +90,8 @@ if (!$hasil) {
 					</li>
 				</ul>
 
-	<div class="table-data">
-		<div>
-			<canvas id="myChart"></canvas>
-		</div>
-    	<script>
-			// Function to fetch data from PHP script
-			async function fetchData() {
-				const response = await fetch('fetch_data.php');
-				const data = await response.json();
-				return data;
-			}
-
-			// Function to create chart
-			async function createChart() {
-			const data = await fetchData();
-			const categories = data.map(item => item.kategori);
-			const ratings = data.map(item => item.total_rating); // Menggunakan total_rating
-
-			const ctx = document.getElementById('myChart').getContext('2d');
-			new Chart(ctx, {
-				type: 'bar',
-				data: {
-					labels: categories,
-					datasets: [{
-						label: 'Total Ratings',
-						data: ratings,
-						borderWidth: 1,
-						backgroundColor: 'rgba(75, 192, 192, 0.2)',
-						borderColor: 'rgba(75, 192, 192, 1)',
-					}]
-				},
-				options: {
-					scales: {
-						y: {
-							beginAtZero: true
-						}
-					}
-				}
-			});
-		}
- 
-
-			// Call the function to create the chart
-			createChart();
-			</script>
-	</div>
-	</script>
-	</div>
-
-<div class="table-data">
-	<div class="order">
+    <div class="table-data">
+    <div class="order">
     <table>
         <thead>
         <tr>
@@ -179,11 +118,11 @@ if (!$hasil) {
             ?>
         </tbody>
     </table>
+    <a href="cetak.php" target="_blank"><button class="btn btn-primary">Cetak Laporan</button>
     </div>
-	</div>
+    </div>
 </section>
 </main>
-
 <script src="js/admin.js" defer></script>
 </body>
 </html>

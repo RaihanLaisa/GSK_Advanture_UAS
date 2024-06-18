@@ -81,6 +81,7 @@ if(!isset($_SESSION['user_name']))
               </li>     <!-- NAV BAR -->
                 <li><a href="#Rekomendasi">Rekomendasi</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="formulir.php">Rating</a></li>
                 <a href="logout.php" type="button" class="cta cta-header1">Logout</a
                li>
              
@@ -458,10 +459,6 @@ if(!isset($_SESSION['user_name']))
             Instagram
           </div>
         </div>
-        <div class="layar-dalam">
-          <div class="copyright">&copy; 2222 Gresik Discovery</div>
-        </div>
-      
-    <script src="javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
