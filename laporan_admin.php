@@ -32,7 +32,6 @@ if (!$hasil) {
         <tr>
             <th>No</th>
             <th>User</th>
-            <th>Email</th>
             <th>Kategori</th>
             <th>Rating</th>
         </tr>
@@ -45,7 +44,6 @@ if (!$hasil) {
                 <tr>
                     <th scope="row"><?php echo $nomor; ?></th>
                     <td><?php echo $data['user']; ?></td>
-                    <td><?php echo $data['email']; ?></td>
                     <td><?php echo $data['kategori']; ?></td>
                     <td><?php echo $data['rating']; ?></td>
                 </tr>
@@ -55,6 +53,7 @@ if (!$hasil) {
             ?>
         </tbody>
     </table>
+    <a href="cetak.php" target="_blank"><button class="btn btn-primary">Cetak Laporan</button>
     </div>
 </main>
 
@@ -76,7 +75,7 @@ if (!$hasil) {
         </div>
     </div>
     <div class="layar-dalam">
-        <div class="copyright">&copy; 2222 Gresik Discovery</div>
+        <div class="copyright">&copy; 2024 Gresik Discovery</div>
     </div>
 </footer>
 </body>

@@ -134,33 +134,7 @@ if (!isset($_SESSION['admin_name'])) {
 			});
 		</script>
 	</div>
-
-	<div class="table-data">
-		<div>
-			<canvas id="chartku"></canvas>
-		</div>
-		<script>
-			const ctx2 = document.getElementById('chartku').getContext('2d');
-
-			new Chart(ctx2, {
-				type: 'line',
-				data: {
-					labels: ['Pantai', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-					datasets: [{
-						label: '# of Votes',
-						data: [1, 2, 3, 4, 5],
-						borderWidth: 1
-					}]
-				},
-				options: {
-					scales: {
-						y: {
-							beginAtZero: true
-						}
-					}
-				}
-			});
-		</script>
+	</script>
 	</div>
 </section>
 </main>

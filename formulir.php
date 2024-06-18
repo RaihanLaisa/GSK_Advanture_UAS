@@ -5,11 +5,12 @@ session_start();
 
 if(!isset($_SESSION['user_name'])){
    header('location:login_form.php');
+   exit;
 }
+
 
 // Initialize variables
 $user = '';
-$email = '';
 $rating = '';
 $kategori = '';
 $errors = [];
@@ -17,12 +18,11 @@ $errors = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input
     $user = htmlspecialchars(trim($_POST['user']));
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
     $kategori = htmlspecialchars(trim($_POST['kategori']));
     $rating = htmlspecialchars(trim($_POST['rating']));
 
     if (empty($errors)) {
-        $query = "INSERT INTO user_rating (user, email, kategori, rating) VALUES ('$user', '$email', '$kategori', '$rating')";
+        $query = "INSERT INTO user_rating (user, kategori, rating) VALUES ('$user', '$kategori', '$rating')";
         $result = mysqli_query($conn, $query);
 
         if ($result) {
@@ -51,10 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </nav>
     <form action="rating.php" method="post">
     <label for="user">User:</label>
-    <input type="text" id="user" name="user" c<?php echo $_SESSION['user_name'] ?>><br><br>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" class="form-control" readonly><br><br>
+    <input type="text" id="user" name="user" <?php echo $_SESSION['user_name'] ?> readonly><br><br>
 
     <label for="kategori">Kategori</label>
     <select id="kategori" name="kategori" class="form-control" required>
