@@ -14,8 +14,8 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #ee0979;
-  --bs-red: #dc3545;
+  --bs-pink: #174337;
+  --bs-red: #5be7e3;
   --bs-orange: #ff6a00;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
@@ -73,9 +73,9 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ee0979;
-  --bs-link-hover-color: #be0761;
-  --bs-code-color: #ee0979;
+  --bs-link-color: #61e6e6;
+  --bs-link-hover-color: #4f59e1;
+  --bs-code-color: #143237;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -10855,12 +10855,14 @@ html {
   letter-spacing: 0.1rem;
 }
 
+/* BACKGROUND */
+
 header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #13653f 0%, #143237 100%); 
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -10880,7 +10882,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #13653f 0%, #143237 100%);
 }
 header.masthead .bg-circle-1 {
   height: 90rem;
@@ -10919,3 +10921,4 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
+/* BACKGROUND */

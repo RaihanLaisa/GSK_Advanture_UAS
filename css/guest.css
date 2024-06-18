@@ -59,14 +59,7 @@ body {
   height: 54px;
   border-radius: 8px;
 }
-.signup-btn {
-  width: 352px;
-  height: 35px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #f6a973;
-}
+
 .sosmed-btn {
   padding: 0px 12px;
   width: 352px;
@@ -100,7 +93,7 @@ body {
 
 .footer {
   padding: 100px 20px 15px;
-  background-color: #f44336;
+  background-color: #12561b;
   color: #fff;
 }
 .footer-logo {
@@ -128,11 +121,6 @@ body {
   background: #efefef;
 }
 
-.fa-heart {
-  margin: 0 5px;
-  color: #f44336;
-}
-
 .footer .copyright {
   text-align: center;
 }
@@ -145,7 +133,7 @@ body {
 }
 
 .alert-info {
-  background-color: #f6a973;
+  background-color: #64887f;
   position: fixed;
   bottom: 0px;
   right: 10px;
@@ -171,10 +159,10 @@ body {
 }
 
 .color-1 {
-  color: #f49d1a;
+  color: #3369a0;
 }
 .color-2 {
-  color: #ffe15d;
+  color: #33a06f;
 }
 
 .no-hovered-link {
@@ -399,7 +387,7 @@ cursor: pointer;
 .services .card i{
 font-size: 80px;
 text-align: center;
-color: #ffa500;
+color: #40abbe;
 margin-top: 20px;
 }
 .services .card .card-body h3{
@@ -409,3 +397,26 @@ font-weight: 600;
 text-align: center;
 }
 /* Section Services End */
+
+* Button Styles */
+nav ul li a.logout-btn {
+  background-color: #db3c20;
+  color: #fff;
+  padding: 5px 10px; /* Kurangi padding untuk membuat tombol lebih kecil */
+  border-radius: 1px;
+  margin-left: 10px; /* Beri margin untuk sedikit jarak antar elemen */
+  display: inline-block;
+}
+nav ul li a.logout-btn:hover {
+  background-color: #b8321a;
+  text-decoration: none;
+}
+nav .menu ul li a {
+  color: #333;
+}
+nav ul li a.logout-btn {
+  width: auto; /* Sesuaikan lebar otomatis sesuai konten */
+  margin: 1px;
+  display: block;
+  text-align: center;
+}
