@@ -67,7 +67,7 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <span class="color-1">Travellin</span><span class="color-2">Web</span>
+          <span class="color-1">Gresik</span><span class="color-2">Discovery</span>
         </a>
         <button
           class="navbar-toggler"
@@ -83,12 +83,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="no-hovered-link nav-link" href="index.html"
+              <a class="no-hovered-link nav-link" href="guest_page.php"
                 >Main Menu</a
               >
             </li>
             <li class="nav-item">
-              <a class="no-hovered-link nav-link" href="home.html">Home</a>
+              <a class="no-hovered-link nav-link" href="guest_page.php">Home</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -114,9 +114,7 @@
           </svg>
          
           </script>
-          <button id="register_" class="btn btn-info" onclick="changeButtonDesc()">
-            MASUK
-          </button>
+          <a class="btn btn-light ms-2 bg-success" href="login_form.php">Login</a>
         </div>
       </div>
     </nav>
@@ -239,7 +237,7 @@
     </div>
     <!-- alert -->
     <div class="alert alert-info" role="alert">
-      Let's Visit Destination Of Indonesia
+      Let's Visit Destination Of Gresik
     </div>
     
     
