@@ -15,34 +15,16 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+   
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-
+    <link rel="stylesheet" href="css/guest.css">
+   
     
 
     <!-- Boostrap icons -->
@@ -77,421 +59,8 @@
 
 
 
-    <style>
-      body {
-        font-family: "Work Sans", sans-serif;
-        background-color: whitesmoke;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .signin-container {
-        padding: 48px 24px;
-        width: 400px;
-        background: #ffffff;
-        border: 1px solid black;
-        border-radius: 8px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-      }
-      .signin-title {
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 29px;
-        /* Brand/Indigo/Marine - #000032 */
-        color: #000032;
-        margin-bottom: 41px;
-      }
-      .input-email {
-        padding: 13px 20px;
-        width: 352px;
-        height: 45px;
-        background: #ffffff;
-        border: 1.5px solid #000032;
-        border-radius: 8px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #b3b3b3;
-        margin-bottom: 15px;
-      }
-      .input-password {
-        padding: 13px 20px;
-        width: 352px;
-        height: 45px;
-        background: #ffffff;
-        border: 1.5px solid #000032;
-        border-radius: 8px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #b3b3b3;
-      }
-      .mb-12 {
-        margin-bottom: 12px;
-      }
-      .mb-24 {
-        /* margin-bottom: 24px; */
-        margin-top: 24px;
-        margin-bottom: 24px;
-      }
-      .signin-btn {
-        padding: 16px 24px;
-        width: 352px;
-        height: 54px;
-        border-radius: 8px;
-      }
-      .signup-btn {
-        width: 352px;
-        height: 35px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #f6a973;
-      }
-      .sosmed-btn {
-        padding: 0px 12px;
-        width: 352px;
-        height: 40px;
-        background: #f2f2f2;
-        border-radius: 4px;
-      }
-      .navbar-brand {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 45px;
-      }
-
-      .d-flex {
-        width: 30vw;
-      }
-
-      .search-input {
-        border-right: none;
-        border-top-left-radius: 24px;
-        border-bottom-left-radius: 24px;
-      }
-      .search-btn {
-        background-color: #fff;
-        border-left: none;
-        border-top-right-radius: 24px;
-        border-bottom-right-radius: 24px;
-      }
-
-      .footer {
-        padding: 100px 20px 15px;
-        background-color: #f44336;
-        color: #fff;
-      }
-      .footer-logo {
-        width: 150px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-      .footer h4 {
-        text-align: left;
-        margin-top: 15px;
-        margin-bottom: 25px;
-      }
-      .footer p {
-        font-size: 12px;
-        text-align: justify;
-        padding-right: 35px;
-      }
-
-      .footer .row .fa {
-        padding-right: 20px;
-        font-size: 15px;
-      }
-      .footer hr {
-        margin-top: 10px;
-        background: #efefef;
-      }
-
-      .fa-heart {
-        margin: 0 5px;
-        color: #f44336;
-      }
-
-      .footer .copyright {
-        text-align: center;
-      }
-
-      .btn-primary {
-        margin: 10px auto;
-        width: auto;
-        padding-top: 0px;
-        display: block;
-      }
-
-      .alert-info {
-        background-color: #f6a973;
-        position: fixed;
-        bottom: 0px;
-        right: 10px;
-        width: 10vw;
-        z-index: 1000;
-      }
-
-      .bi-bell {
-        background-color: tra;
-        border: none;
-        height: 24px;
-        width: 24px;
-        vertical-align: middle;
-        margin-left: 3rem;
-      }
-
-      .btn-info {
-        margin-left: 1rem;
-      }
-
-      .d-flex {
-        width: 50vw;
-      }
-
-      .color-1 {
-        color: #f49d1a;
-      }
-      .color-2 {
-        color: #ffe15d;
-      }
-
-      .no-hovered-link {
-        text-decoration: none;
-        color: black;
-      }
-      .no-hovered-link:hover {
-        text-decoration: underline;
-        color: blue;
-      }
-
-      @media screen and (max-width: 1210px) {
-        .d-flex {
-          width: 35vw;
-        }
-      }
-
-      @media screen and (max-width: 992px) {
-        .d-flex {
-          width: 90vw;
-          margin-bottom: 20px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .d-flex {
-          width: 90vw;
-          margin-bottom: 20px;
-        }
-        .w-90vw {
-          width: 90vw !important;
-        }
-        .signin-container {
-          width: 100%;
-        }
-        .input-email {
-          width: 100%;
-        }
-        .input-password {
-          width: 100%;
-        }
-        .signin-btn {
-          width: 100%;
-        }
-        .signup-btn {
-          width: 100%;
-        }
-        .sosmed-btn {
-          width: 100%;
-        }
-        .alert-info{
-          width: 40%;
-        }
-      }
-      .bi-search {
-        margin-left: -2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .btn-outline-warning {
-        margin-left: 1rem;
-      }
-
-      .explanation {
-        color: #eb6440;
-        text-align: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      }
-
-      .btn-link {
-        display: flex;
-        justify-content: right;
-        align-items: flex-end;
-        color: #fff;
-      }
-
-      .btn-link:hover{
-        color: white !important;
-      }
-
-      .bi-envelope {
-        margin-right: 0.2rem;
-      }
-
-      .bi-geo-alt {
-        margin-right: 0.2rem;
-      }
-
-      
-      
-      .services {
-    margin: 5rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .services .title {
-    font-size: 2rem;
-  }
-  
-  .services .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 4rem;
-    margin-top: 2rem;
-  }
-  
-  .services .cards .card {
-    height: 12rem;
-    padding: 3rem 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 1rem;
-  }
-  .services .cards .card .icon {
-    margin-bottom: 1rem;
-  }
-  
-  .services .cards .card .title {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-  }
-  
-  .services .cards .card p {
-    text-align: center;
-  }
 
 
-  .destination {
-  margin: 5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.destination .title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.destination .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 4rem;
-}
-
-.destination .cards .image img {
-  height: 18rem;
-  width: 18rem;
-}
-
-.destination .cards .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0.5rem 0;
-}
-
-.destination .cards .time {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.destination .cards .time i {
-  margin-right: 1rem;
-}
-
-
-/* Section Services Start */
-.services{
-    background: #f9f9f9;
-    margin-top: 50px;
-}
-.services .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    border: none;
-    cursor: pointer;
-}
-.services .card i{
-    font-size: 80px;
-    text-align: center;
-    color: #ffa500;
-    margin-top: 20px;
-}
-.services .card .card-body h3{
-    font-weight: 600;
-}
-.services .card .card-body{
-    text-align: center;
-}
-/* Section Services End */
-
-
-/* Section code */
     </style>
   </head>
   <body class="screen">
@@ -543,26 +112,10 @@
               d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
             />
           </svg>
-          <button
-            class="btn btn-outline-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#modaltravellinweb"
-            type="button"
-          >
-            Sign in
-          </button>
-          <script>
-            function changeButtonDesc() {
-              let btnElement = document.getElementById("btn");
-              if (btnElement.innerHTML == "LOGOUT") {
-                btnElement.innerHTML = "SIGNOUT";
-              } else {
-                btnElement.innerHTML = "LOGOUT";
-              }
-            }
+         
           </script>
-          <button id="btn" class="btn btn-info" onclick="changeButtonDesc()">
-            SIGNOUT
+          <button id="register_" class="btn btn-info" onclick="changeButtonDesc()">
+            MASUK
           </button>
         </div>
       </div>
@@ -575,56 +128,11 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog d-flex justify-content-center m-auto">
-        <div class="modal-content w-auto w-90vw">
-          <div class="modal-body">
-            <div class="signin-container">
-              <div style="display: flex; justify-content: space-between">
-                <div class="signin-title">Sign In</div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  style="position: relative; bottom: 35px; left: 15px"
-                ></button>
-              </div>
-              <div class="mb-24">
-                <div>
-                  <input
-                    class="input-email"
-                    type="text"
-                    placeholder="Enter phone number or email address"
-                  />
-                </div>
-                <div>
-                  <input
-                    class="input-password"
-                    type="password"
-                    placeholder="Enter password"
-                  />
-                </div>
-              </div>
-              <button
-                type="button"
-                class="btn btn-secondary btn-secondary signin-btn mb-24"
-              >
-                Sign in
-              </button>
-              <button type="button" class="btn btn-light signup-btn mb-24">
-                Sign up
-              </button>
-              <div class="mb-24" style="text-align: center">or</div>
-              <button
-                type="button"
-                class="btn btn-secondary btn-light sosmed-btn mb-12"
-              >
-                <i class="bi bi-google"></i>
-                Continue with Google
-              </button>
-              <button
-                type="button"
-                class="btn btn-secondary btn-light sosmed-btn mb-12"
+      
+             
+            
+             
+              
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -683,7 +191,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img
-            src="asset/Banyu Urip Mangrove Center.jpg "
+            src="asset/bukitjamurbaru.jpg "
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -692,7 +200,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <img
-            src="asset/Dynasty Water World.jpg"
+            src="asset/Bukit Kapur Sekapuk.jpg"
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -701,7 +209,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="10000">
           <img
-            src="asset/Pantai Karang Kering.jpg"
+            src="asset/Dynasty Water World.jpg"
             width="500vw"
             height="500vx"
             class="d-block w-100"
@@ -815,10 +323,10 @@
               alt="instagram link Rhn's"
           /></a>
         </div>
-        <a href="contact-us.html" class="btn btn-link" role="button">Contact Us</a>
+        
       </div>
       <hr />
-      <p class="copyright">Psalm The Royal Company © 2022</p>
+      <p class="copyright">Kelompok 10 © 2024</p>
     </div>
   </section>
 </html>

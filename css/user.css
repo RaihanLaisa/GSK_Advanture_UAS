@@ -3,9 +3,9 @@
 nav ul li a.logout-btn {
   background-color: #db3c20;
   color: #fff;
-  padding: 10px 10px;
-  border-radius: 4px;
-  margin-left: 10px;
+  padding: 5px 10px; /* Kurangi padding untuk membuat tombol lebih kecil */
+  border-radius: 1px;
+  margin-left: 10px; /* Beri margin untuk sedikit jarak antar elemen */
   display: inline-block;
 }
 nav ul li a.logout-btn:hover {
@@ -16,11 +16,12 @@ nav .menu ul li a {
   color: #333;
 }
 nav ul li a.logout-btn {
-  width: calc(100% - 20px); /* Adjust for padding */
-  margin: 10px;
+  width: auto; /* Sesuaikan lebar otomatis sesuai konten */
+  margin: 1px;
   display: block;
   text-align: center;
 }
+
 /* Body and HTML base styles */
 body, html {
   font-family: Arial, Helvetica, sans-serif;
@@ -287,7 +288,7 @@ section.quote .layar-dalam p {
 
 /* Footer styles */
 footer {
-  padding: 50px 0;
+  padding: 10px 0;
   background-color: #1c3829;
   color: #fff;
 }
@@ -305,7 +306,7 @@ footer .layar-dalam h5 {
   font-weight: bold;
 }
 footer .layar-dalam .copyright {
-  width: 100%;
+  width: 50%;
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #1a3e28;
