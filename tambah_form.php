@@ -1,6 +1,11 @@
 <?php
 include('config.php');
 
+// Display errors
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Initialize variables
 $nama_wisata = '';
 $kategori = '';
@@ -19,10 +24,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rating = htmlspecialchars(trim($_POST['rating']));
 
     // Handle file upload
-    $extensi = explode(".", $_FILES['foto']['name']);
-    $foto  = "foto-".round(microtime(true)).".".end($extensi);
-    $sumber  = $_FILES['foto']['tmp_name'];
-    $upload = move_uploaded_file($sumber,'foto/'.$foto);
+    if (!empty($_FILES['foto']['name'])) {
+        $extensi = explode(".", $_FILES['foto']['name']);
+        $foto  = "foto-".round(microtime(true)).".".end($extensi);
+        $sumber  = $_FILES['foto']['tmp_name'];
+        $upload = move_uploaded_file($sumber,'foto/'.$foto);
+        if (!$upload) {
+            $errors[] = "Failed to upload image.";
+        }
+    } else {
+        $errors[] = "Foto is required";
+    }
 
     // Check for errors
     if (empty($nama_wisata)) {
@@ -63,77 +75,77 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Wisata</title>
     <style>
-/* Same CSS as in the original file for consistency */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
-}
+        /* Same CSS as in the original file for consistency */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
 
-/* Container */
-.container {
-  width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-/* Link */
-.container a {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 10px 15px;
-  background-color: #2848a7;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
+        /* Link */
+        .container a {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #2848a7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
 
-.container a:hover {
-  background-color: #215188;
-}
+        .container a:hover {
+            background-color: #215188;
+        }
 
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-}
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
-form input,
-form select,
-form textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+        form input,
+        form select,
+        form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
 
-form input[type="submit"] {
-  background-color: #2848a7;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+        form input[type="submit"] {
+            background-color: #2848a7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-form input[type="submit"]:hover {
-  background-color: #215188;
-}
+        form input[type="submit"]:hover {
+            background-color: #215188;
+        }
 
-/* Error messages */
-.errors {
-  color: red;
-  margin-bottom: 15px;
-}
+        /* Error messages */
+        .errors {
+            color: red;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>

@@ -2,7 +2,7 @@
 include('config.php');
 
 // Query to fetch data from the database where category is 'alam'
-$query = "SELECT * FROM user_admin WHERE kategori = 'keagamaan'";
+$query = "SELECT * FROM user_admin WHERE kategori = 'Keagamaan'";
 $hasil = mysqli_query($conn, $query);
 
 if (!$hasil) {

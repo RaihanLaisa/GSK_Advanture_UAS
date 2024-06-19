@@ -85,18 +85,14 @@ if (!$hasil) {
 <main>
 	<div class="head-title">
 		<div class="left">
-			<h1>Dashboard</h1>
+			<h1>Tambah wisata</h1>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">Dashboard</a>
-					</li>
-					<li><i class='bx bx-chevron-right' ></i></li>
-					<li>
-						<a class="active" href="#">Home</a>
+						<a href="#">Tammbah wisata</a>
 					</li>
 				</ul>
     <main>
-        <div class="container">
+        <div class="table-data">
         <a href="tambah_form.php">Tambah Wisata</a>
         <table>
             <thead>
@@ -139,6 +135,7 @@ if (!$hasil) {
                 ?>
             </tbody>
         </table>
+		</div>
         </div>
     </main>
 </main>
