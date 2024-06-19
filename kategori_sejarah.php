@@ -62,8 +62,107 @@ while ($row = mysqli_fetch_assoc($result)) {
             <div class="bg-circle-2 bg-circle"></div>
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
-        </header>
+            </header>
         <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-thumbnail rounded-circle" src="asset/Giri kedaton potong.png" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Giri Kedaton</h2>
+                            <p>Kedaton (istana) atau pusat pemerintahan era Giri I yaitu Sunan Giri atau Raden Paku atau Raden Ainul Yaqin yang diteruskan secara turun temurun oleh para keturunannya. Giri Kedaton didirikan oleh Sunan Giri pada sekitar tahun 1487 M di Kota Gresik. Dipilihnya lokasi tersebut sebagai Kedaton Giri berdasarkan petunjuk Syeck Maulana Iskhak (Ayah Sunan Giri) atas dasar kes amaan segenggam tanah yang dibawa dari Samudra Pasai. </p>
+                             <div class="box-above">
+                                Harga Tiket : Rp 0 (gratis)
+                            </div>
+                            <div class="box-above">
+                            Jam Buka : Setiap hari 24 jam
+                            </div>
+                            <div class="box-above">
+                            Lokasi : Jl. Sunan Giri XIII, Pedukuhan, Kebomas, Kec. Kebomas, Kabupaten Gresik, Jawa Timur 61124, Indonesia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="asset/makamsunan.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Makam Sunan Giri</h2>
+                            <p>Sunan Giri merupakan putera dari Syekh Maulana lshaq dan Dewi Sekardadu (putri Raja Blambangan, Menak Sembuyu) yang lahir pada Tahun 7442 M, Sunan Giri wafat pada tahun 7506 M dan dimakamkan diatas bukit dalam cungkup berarsitektur khas Jawa yang sangat unik. Area makam ini sangat luas dan teduh karena dipenuhi dengan pepohonan berdaun rimbun di sekitarnya. Kawasan makam ini terbagi menjadi 3 bagian, yaitu area pintu masuk, area gapura, dan area inti, yaitu makam sunan.</p>
+                            <div class="box-above">
+                            Harga Tiket : Rp 0 (gratis)
+                            </div>
+                            <div class="box-above">
+                            Jam Buka : Setiap hari 24 jam
+                            </div>
+                            <div class="box-above">
+                            Lokasi : Jalan Sunan Giri, Dusun Giri Gajah, Desa Giri, Kecamatan Kebomas, Kabupaten Gresik, Jawa Timur
+                            </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="asset/sitifatimah.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Makam Siti Fatimah binti Maimun</h2>
+                            <p>Makam Fatimah binti Maimun diambil alih oleh Balai Pelestarian Peninggalan Purbakala (BP3) Jawa Timur. Area makam tersebut juga tidak diperbolehkan lagi untuk menjadi pemakaman umum, karena pemerintah menjadikannya sebagai situs cagar budaya. Makam Siti Fatimah berada di dalam kelambu, arsitekturnya juga mengikuti corak Hindu Budha sesuai dengan kerajaan yang berkuasa, saat ia meninggal. Gaya arsitektur dari makam Siti Fatimah binti Maimun yang ditemukan di daerah pantai utara Leran ini dipengaruhi oleh pengaruh kerajaan yang pada waktu itu masih sangat kuat.</p>
+                                <div class="box-above">
+                                Harga Tiket : Rp 0 (gratis)
+                                </div>
+                                <div class="box-above">
+                                Jam Buka : Setiap hari 24 jam
+                                </div>
+                                <div class="box-above">
+                                Lokasi : Jl. Raya Manyar, Pesantren, Peganden, Kec. Manyar, Kabupaten Gresik, Jawa Timur 61151</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 4-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="asset/makamibrahim.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Makam Sunan Syeikh Maulana Malik Ibrahim</h2>
+                            <p>Sunan Maulana Malik Ibrahim merupakan nama asli dari Sunan Gresik dan sebagai pemimpin para Wali Songo serta wali tertua. Sunan Maulana Malik Ibrahim juga dikenal dengan Makdum Ibrahim As-Samarkandy. Ia diperkirakan lahir di Samarkand, Asia Tengah, pada abad ke-14. Adapula yang berpendapat bahwa Sunan Maulana Malik Ibrahim berasal dari Magribi atau Maroko, Afrika Utara. Cara dakwah Sunan Maulana Malik Ibrahim memberikan pengobatan gratis dan berdagang. Sunan Maulana Malik Ibrahim wafat pada tanggal 12 Rabiul Awal 822 H (1419 M), selanjutnya tanggal tersebut diperingati sebagai haul yang diikuti oleh jamaah lokal, regional, maupun nusantara.</p>
+                        <div class="box-above">
+                        Harga Tiket : Rp 0 (gratis)
+                        </div>
+                        <div class="box-above">
+                        Jam Buka : Setiap hari 24 jam
+                        </div>
+                        <div class="box-above">
+                        Lokasi : Jl. Jalan Malik Ibrahim Nomor 52-62, Gapuro Sukolilo, Bedilan, Gresik
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="scroll">
             <div class="container px-5">
             <?php
