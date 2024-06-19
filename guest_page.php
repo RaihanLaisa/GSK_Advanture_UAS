@@ -83,16 +83,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="no-hovered-link nav-link" href="guest_page.php"
-                >Main Menu</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="no-hovered-link nav-link" href="guest_page.php">Home</a>
-            </li>
+              
           </ul>
           
-          <a class="btn btn-light ms-2 bg-success" href="register_form.php">Login</a>
+          <a class="btn btn-light ms-2 bg-success" href="register_form.php">Registrasi</a>
         </div>
       </div>
     </nav>
