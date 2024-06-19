@@ -23,22 +23,24 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', 'B', 12);
 
 // Add a header
-$pdf->Cell(0, 10, 'Rating List', 1, 1, 'C');
+$pdf->Cell(192, 10, 'Rating List', 1, 1, 'C');
 
 // Set the header for the table
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(60, 10, 'User', 1);
-$pdf->Cell(60, 10, 'Kategori', 1);
-$pdf->Cell(60, 10, 'Rating', 1);
+$pdf->Cell(48, 10, 'User', 1);
+$pdf->Cell(48, 10, 'ulasan', 1);
+$pdf->Cell(48, 10, 'Kategori', 1);
+$pdf->Cell(48, 10, 'Rating', 1);
 $pdf->Ln();
 
 // Add data to the table
 $pdf->SetFont('Arial', '', 10);
 
 while($row = mysqli_fetch_assoc($result)) {
-    $pdf->Cell(60, 10, htmlspecialchars($row['user']), 1);
-    $pdf->Cell(60, 10, htmlspecialchars($row['kategori']), 1);
-    $pdf->Cell(60, 10, htmlspecialchars($row['rating']), 1);
+    $pdf->Cell(48, 10, htmlspecialchars($row['user']), 1);
+    $pdf->Cell(48, 10, htmlspecialchars($row['ulasan']), 1);
+    $pdf->Cell(48, 10, htmlspecialchars($row['kategori']), 1);
+    $pdf->Cell(48, 10, htmlspecialchars($row['rating']), 1);
     $pdf->Ln();
 }
 
