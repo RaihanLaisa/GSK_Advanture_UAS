@@ -27,13 +27,13 @@ if (!$hasil) {
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="#">
+				<a href="admin_page.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="table.php">
+				<a href="#">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Tambah wisata</span>
 				</a>
@@ -85,14 +85,19 @@ if (!$hasil) {
 <main>
 	<div class="head-title">
 		<div class="left">
-			<h1>Tambah wisata</h1>
+			<h1>Tambah Wisata</h1>
 				<ul class="breadcrumb">
 					<li>
-						<a href="#">Tammbah wisata</a>
+						<a href="#">Dashboard</a>
+					</li>
+					<li><i class='bx bx-chevron-right' ></i></li>
+					<li>
+						<a class="active" href="table.php">Tambah Wisata</a>
 					</li>
 				</ul>
     <main>
         <div class="table-data">
+		<div class="todo">
         <a href="tambah_form.php">Tambah Wisata</a>
         <table>
             <thead>
@@ -102,8 +107,9 @@ if (!$hasil) {
                     <th>Kategori</th>
                     <th>Foto</th>
                     <th>Deskripsi Wisata</th>
-                    <th>Ulasan</th>
-                    <th>Rating</th>
+                    <th>Jam Buka</th>
+                    <th>lokasi</th>
+					<th>harga tiket</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -118,8 +124,9 @@ if (!$hasil) {
                         <td><?php echo $data['kategori']; ?></td>
                         <td><img src="foto/<?php echo $data['foto']; ?>" width="160px"></td>
                         <td><?php echo $data['deskripsi_wisata']; ?></td>
-                        <td><?php echo $data['ulasan']; ?></td>
-                        <td><?php echo $data['rating']; ?></td>
+                        <td><?php echo $data['jam_buka']; ?></td>
+                        <td><?php echo $data['lokasi']; ?></td>
+						<td><?php echo $data['harga_tiket']; ?></td>
                         <td>
                         <button class="btn edit" onclick="window.location.href='edit_form.php?id=<?php echo $data['id']; ?>'">
                             <i class="fa fa-edit"></i>

@@ -10,6 +10,7 @@ if(!isset($_SESSION['user_name'])){
 
 // Initialize variables
 $user = '';
+$ulasan = '';
 $rating = '';
 $kategori = '';
 $errors = [];
@@ -17,11 +18,12 @@ $errors = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input
     $user = mysqli_real_escape_string($conn, htmlspecialchars(trim($_POST['user'])));
+    $ulasan = mysqli_real_escape_string($conn, htmlspecialchars(trim($_POST['ulasan'])));
     $kategori = mysqli_real_escape_string($conn, htmlspecialchars(trim($_POST['kategori'])));
     $rating = mysqli_real_escape_string($conn, htmlspecialchars(trim($_POST['rating'])));
 
     if (empty($errors)) {
-        $query = "INSERT INTO user_rating (user, kategori, rating) VALUES ('$user', '$kategori', '$rating')";
+        $query = "INSERT INTO user_rating (user, ulasan, kategori, rating) VALUES ('$user', '$ulasan', '$kategori', '$rating')";
         $result = mysqli_query($conn, $query);
 
         if ($result) {
@@ -52,29 +54,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="user">User:</label>
         <input type="text" id="user" name="user" value="<?php echo $_SESSION['user_name']; ?>" readonly><br><br>
 
-        <label for="kategori">Kategori</label>
-        <select id="kategori" name="kategori" class="form-control" required>
-            <option value="Sejarah" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
-            <option value="Bukit" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
-            <option value="Keagamaan" <?php echo ($kategori == 'Keagamaan') ? 'selected' : ''; ?>>Keagamaan</option>
-            <option value="Waterboom" <?php echo ($kategori == 'Waterboom') ? 'selected' : ''; ?>>Waterboom</option>
-            <option value="Alam" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
-            <option value="Pantai" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
-        </select>
+        <label for="ulasan">ulasan</label>
+        <textarea id="ulasan" name="ulasan"><?php echo $ulasan; ?></textarea>
 
-		<form action="#">
-			<div class="rating">
-				<input type="number" name="rating" hidden>
-				<i class='bx bx-star star' style="--i: 0;"></i>
-				<i class='bx bx-star star' style="--i: 1;"></i>
-				<i class='bx bx-star star' style="--i: 2;"></i>
-				<i class='bx bx-star star' style="--i: 3;"></i>
-				<i class='bx bx-star star' style="--i: 4;"></i>
-			</div>
-        
-        <input type="submit" value="Submit">
-    </form>
+    <label for="kategori">Kategori</label>
+    <select id="kategori" name="kategori" class="form-control" required>
+        <option value="Sejarah" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
+        <option value="Bukit" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
+        <option value="Keagamaan" <?php echo ($kategori == 'Keagamaan') ? 'selected' : ''; ?>>Keagamaan</option>
+        <option value="Waterboom" <?php echo ($kategori == 'Waterboom') ? 'selected' : ''; ?>>Waterboom</option>
+        <option value="Alam" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
+        <option value="Pantai" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
+    </select>
 
-    <script src="js/form.js" defer></script>
+	<form action="#">
+		<div class="rating">
+			<input type="number" name="rating" hidden>
+			<i class='bx bx-star star' style="--i: 0;"></i>
+			<i class='bx bx-star star' style="--i: 1;"></i>
+			<i class='bx bx-star star' style="--i: 2;"></i>
+			<i class='bx bx-star star' style="--i: 3;"></i>
+			<i class='bx bx-star star' style="--i: 4;"></i>
+		</div>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<script src="js/form.js" defer></script>
 </body>
 </html>
