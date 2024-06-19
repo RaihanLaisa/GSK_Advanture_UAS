@@ -125,9 +125,7 @@
                 <h3>Penginapan</h3>
                 <p>Menyediakan berbagai pilihan penginapan mulai dari hotel, villa, homestay, dan sebagainya yang dapat dipilih sesuai kebutuhan.</p>
               </div>
-            </div>
-          </div>
-        </div>
+           
       </div>
     </section>
     <!-- Section Services End -->
