@@ -112,42 +112,42 @@ if (!$hasil) {
 		<div>
 			<canvas id="myChart"></canvas>
 		</div>
-    	<script>
-			// Function to fetch data from PHP script
-			async function fetchData() {
-				const response = await fetch('fetch_data.php');
-				const data = await response.json();
-				return data;
-			}
+		<script>
+        // Function to fetch data from PHP script
+        async function fetchData() {
+            const response = await fetch('fetch_data.php');
+            const data = await response.json();
+            return data;
+        }
 
-			// Function to create chart
-			async function createChart() {
-			const data = await fetchData();
-			const categories = data.map(item => item.kategori);
-			const ratings = data.map(item => item.total_rating); // Menggunakan total_rating
+        // Function to create chart
+        async function createChart() {
+            const data = await fetchData();
+            const categories = data.map(item => item.kategori);
+            const ratings = data.map(item => item.avg_rating); // Menggunakan avg_rating
 
-			const ctx = document.getElementById('myChart').getContext('2d');
-			new Chart(ctx, {
-				type: 'bar',
-				data: {
-					labels: categories,
-					datasets: [{
-						label: 'Total Ratings',
-						data: ratings,
-						borderWidth: 1,
-						backgroundColor: 'rgba(75, 192, 192, 0.2)',
-						borderColor: 'rgba(75, 192, 192, 1)',
-					}]
-				},
-				options: {
-					scales: {
-						y: {
-							beginAtZero: true
-						}
-					}
-				}
-			});
-		}
+            const ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: categories,
+                    datasets: [{
+                        label: 'Average Ratings',
+                        data: ratings,
+                        borderWidth: 1,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
  
 
 			// Call the function to create the chart
