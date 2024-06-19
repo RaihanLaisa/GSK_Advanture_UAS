@@ -420,3 +420,25 @@ nav ul li a.logout-btn {
   display: block;
   text-align: center;
 }
+
+
+
+/* Section Packages Start */
+
+.checked{
+  color: #ffa500;
+}
+.star i{
+  font-size: 15px;
+}
+.Rekomendasi .card .card-body h6{
+  font-size: 20px;
+}
+.Rekomendasi .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: rgb(192, 208, 217);
+  border-radius: 5px;
+}
+/* Section Packages End */
