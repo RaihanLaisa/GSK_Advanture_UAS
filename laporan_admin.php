@@ -1,7 +1,6 @@
 <?php
 include('config.php');
 
-// Query to fetch data from the database
 $query = "SELECT * FROM user_rating";
 $hasil = mysqli_query($conn, $query);
 
@@ -115,10 +114,10 @@ if (!$hasil) {
                             ?>
                             <tr>
                                 <th scope="row"><?php echo $nomor; ?></th>
-                                <td><?php echo $data['user']; ?></td>
-                                <td><?php echo $data['ulasan']; ?></td>
-                                <td><?php echo $data['kategori']; ?></td>
-                                <td><?php echo $data['rating']; ?></td>
+                                <td><?php echo htmlspecialchars($data['user']); ?></td>
+                                <td><?php echo htmlspecialchars($data['ulasan']); ?></td>
+                                <td><?php echo htmlspecialchars($data['kategori']); ?></td>
+                                <td><?php echo htmlspecialchars($data['rating']); ?></td>
                             </tr>
                             <?php
                             $nomor++;
