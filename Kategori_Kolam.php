@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 
-$query = "SELECT * FROM user_admin WHERE kategori = 'renang'";
+$query = "SELECT * FROM user_admin WHERE kategori = 'Renang'";
 $hasil = mysqli_query($conn, $query);
 
 if (!$hasil) {
