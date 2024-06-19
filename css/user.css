@@ -628,6 +628,7 @@ a {
   text-decoration: none;
   color: black;
 }
+/* button logout */
 .cta {
   padding: 5px 7px; /* Mengurangi padding vertikal untuk membuat tombol lebih kecil */
   border-radius: 80px; /* Mengurangi border-radius untuk ukuran yang lebih kecil */
