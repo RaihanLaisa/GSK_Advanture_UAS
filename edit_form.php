@@ -1,49 +1,50 @@
 <?php
 include('config.php');
 
-// Display errors
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 // Initialize variables
-$id = '';
 $nama_wisata = '';
 $kategori = '';
 $foto = '';
 $deskripsi_wisata = '';
-$ulasan = '';
-$rating = '';
+$jam_buka = '';
+$lokasi = '';
+$harga_tiket = '';
 $errors = [];
 
+// Check if ID parameter exists
 if (isset($_GET['id'])) {
-    $id = intval($_GET['id']);
+    $id = $_GET['id'];
+
+    // Fetch record from database based on ID
     $query = "SELECT * FROM user_admin WHERE id = $id";
     $result = mysqli_query($conn, $query);
-    if ($result) {
-        $data = mysqli_fetch_assoc($result);
-        if ($data) {
-            $nama_wisata = $data['nama_wisata'];
-            $kategori = $data['kategori'];
-            $foto = $data['foto'];
-            $deskripsi_wisata = $data['deskripsi_wisata'];
-            $ulasan = $data['ulasan'];
-            $rating = $data['rating'];
-        } else {
-            die("Data not found.");
-        }
+
+    if (mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+
+        // Assign fetched data to variables
+        $nama_wisata = $row['nama_wisata'];
+        $kategori = $row['kategori'];
+        $foto = $row['foto'];
+        $deskripsi_wisata = $row['deskripsi_wisata'];
+        $jam_buka = $row['jam_buka'];
+        $lokasi = $row['lokasi'];
+        $harga_tiket = $row['harga_tiket'];
     } else {
-        die("Query Error: " . mysqli_errno($conn) . " - " . mysqli_error($conn));
+        // Redirect to a 404 page or handle error accordingly
+        die("Record not found.");
     }
 }
 
+// Process form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input
-    $nama_wisata = htmlspecialchars(trim($_POST['nama_wisata']));
-    $kategori = htmlspecialchars(trim($_POST['kategori']));
-    $deskripsi_wisata = htmlspecialchars(trim($_POST['deskripsi_wisata']));
-    $ulasan = htmlspecialchars(trim($_POST['ulasan']));
-    $rating = htmlspecialchars(trim($_POST['rating']));
+    $nama_wisata = isset($_POST['nama_wisata']) ? htmlspecialchars(trim($_POST['nama_wisata'])) : '';
+    $kategori = isset($_POST['kategori']) ? htmlspecialchars(trim($_POST['kategori'])) : '';
+    $deskripsi_wisata = isset($_POST['deskripsi_wisata']) ? htmlspecialchars(trim($_POST['deskripsi_wisata'])) : '';
+    $jam_buka = isset($_POST['jam_buka']) ? htmlspecialchars(trim($_POST['jam_buka'])) : '';
+    $lokasi = isset($_POST['lokasi']) ? htmlspecialchars(trim($_POST['lokasi'])) : '';
+    $harga_tiket = isset($_POST['harga_tiket']) ? htmlspecialchars(trim($_POST['harga_tiket'])) : '';
 
     // Handle file upload
     if (!empty($_FILES['foto']['name'])) {
@@ -54,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!$upload) {
             $errors[] = "Failed to upload image.";
         }
-    } 
+    }
 
     // Check for errors
     if (empty($nama_wisata)) {
@@ -66,23 +67,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($deskripsi_wisata)) {
         $errors[] = "Deskripsi Wisata is required";
     }
-    if (empty($ulasan)) {
-        $errors[] = "Ulasan is required";
+    if (empty($jam_buka)) {
+        $errors[] = "Jam Buka is required";
     }
-    if (empty($rating)) {
-        $errors[] = "Rating is required";
-    } elseif (!is_numeric($rating) || $rating < 1 || $rating > 5) {
-        $errors[] = "Rating must be a number between 1 and 5";
+    if (empty($lokasi)) {
+        $errors[] = "Lokasi is required";
+    }
+    if (empty($harga_tiket)) {
+        $errors[] = "Harga Tiket is required";
     }
 
-    // If no errors, update the database
+    // If no errors, update record in database
     if (empty($errors)) {
-        if (!empty($_FILES['foto']['name'])) {
-            $query = "UPDATE user_admin SET nama_wisata='$nama_wisata', kategori='$kategori', foto='$foto', deskripsi_wisata='$deskripsi_wisata', ulasan='$ulasan', rating='$rating' WHERE id=$id";
-        } else {
-            $query = "UPDATE user_admin SET nama_wisata='$nama_wisata', kategori='$kategori', deskripsi_wisata='$deskripsi_wisata', ulasan='$ulasan', rating='$rating' WHERE id=$id";
-        }
-        
+        $query = "UPDATE user_admin SET nama_wisata = '$nama_wisata', kategori = '$kategori', foto = '$foto', deskripsi_wisata = '$deskripsi_wisata', jam_buka = '$jam_buka', lokasi = '$lokasi', harga_tiket = '$harga_tiket' WHERE id = $id";
+
         $result = mysqli_query($conn, $query);
 
         if ($result) {
@@ -93,6 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,7 +193,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <option value="">Pilih Kategori</option>
             <option value="Sejarah" <?php echo ($kategori == 'Sejarah') ? 'selected' : ''; ?>>Sejarah</option>
             <option value="Bukit" <?php echo ($kategori == 'Bukit') ? 'selected' : ''; ?>>Bukit</option>
-            <option value="Keagamaan" <?php echo ($kategori == 'keagamaan') ? 'selected' : ''; ?>>keagamaan</option>
+            <option value="Keagamaan" <?php echo ($kategori == 'Keagamaan') ? 'selected' : ''; ?>>Keagamaan</option>
             <option value="Renang" <?php echo ($kategori == 'Renang') ? 'selected' : ''; ?>>Renang</option>
             <option value="Alam" <?php echo ($kategori == 'Alam') ? 'selected' : ''; ?>>Alam</option>
             <option value="Pantai" <?php echo ($kategori == 'Pantai') ? 'selected' : ''; ?>>Pantai</option>
@@ -206,11 +205,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="deskripsi_wisata">Deskripsi Wisata</label>
         <textarea id="deskripsi_wisata" name="deskripsi_wisata"><?php echo $deskripsi_wisata; ?></textarea>
         
-        <label for="ulasan">Ulasan</label>
-        <textarea id="ulasan" name="ulasan"><?php echo $ulasan; ?></textarea>
+        <label for="jam_buka">Jam Buka</label>
+        <input type="text" id="jam_buka" name="jam_buka" value="<?php echo $jam_buka; ?>">
         
-        <label for="rating">Rating</label>
-        <input type="number" id="rating" name="rating" value="<?php echo $rating; ?>" min="1" max="5" step="1">
+        <label for="lokasi">Lokasi</label>
+        <input type="text" id="lokasi" name="lokasi" value="<?php echo $lokasi; ?>">
+
+        <label for="harga_tiket">Harga Tiket</label>
+        <input type="text" id="harga_tiket" name="harga_tiket" value="<?php echo $harga_tiket; ?>">
         
         <input type="submit" value="Submit">
     </form>
