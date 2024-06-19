@@ -229,6 +229,7 @@
               width="20px"
               alt="instagram link Rhn's"
           /></a>
+            <a class="btn btn-light ms-2 bg-success" href="contact.php">Registrasi</a>
         </div>
         
       </div>

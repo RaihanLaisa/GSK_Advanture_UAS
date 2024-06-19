@@ -1,4 +1,4 @@
-<?php
+                                                                                               <?php
 
 use LDAP\Result;
 
@@ -112,9 +112,9 @@ if (!$hasil) {
 		<div>
 			<canvas id="myChart"></canvas>
 		</div>
-		<script>
-        // Function to fetch data from PHP script
-        async function fetchData() {
+    	<script>
+			// Function to fetch data from PHP script
+	   async function fetchData() {
             const response = await fetch('fetch_data.php');
             const data = await response.json();
             return data;
