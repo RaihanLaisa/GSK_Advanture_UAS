@@ -35,7 +35,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
           </ul>
-         
+          <a class="btn btn-light ms-2 bg-success" href="contact.php">Review</a>
           <a class="btn btn-light ms-2 bg-success" href="register_form.php">Registrasi</a>
         </div>
       </div>
@@ -227,7 +227,7 @@
               width="20px"
               alt="instagram link Rhn's"
           /></a>
-            <a class="btn btn-light ms-2 bg-success" href="contact.php">Registrasi</a>
+           
         </div>
         
       </div>

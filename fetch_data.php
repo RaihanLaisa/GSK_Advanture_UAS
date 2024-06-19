@@ -25,8 +25,4 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 echo json_encode($data);
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> ee6ff41029fdbf5093a8a73924af77e42db14712

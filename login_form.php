@@ -20,19 +20,23 @@ if(isset($_POST['submit'])){
 
       $row = mysqli_fetch_array($result);
 
-      if($row['user_type'] == 'admin'){
+      if($row['user_type'] == 'backpacker'){
+
+         $_SESSION['backpacker_name'] = $row['name'];
+         header('location:user_backpacker.php');
+
+      }elseif($row['user_type'] == 'admin'){
 
          $_SESSION['admin_name'] = $row['name'];
          header('location:admin_page.php');
 
-      }elseif($row['user_type'] == 'user'){
+      } elseif ($row['user_type'] == 'familytravelers') {
+         $_SESSION['familytravelers_name'] = $row['name'];
+         header('location:user_familytravelers.php');
 
-         $_SESSION['user_name'] = $row['name'];
-         header('location:user_page.php');
-
-      } elseif ($row['user_type'] == 'guest') {
-         $_SESSION['guest_name'] = $row['name'];
-         header('location:guest_page.php');
+      } elseif ($row['user_type'] == 'historybuff') {
+         $_SESSION['historybuff_name'] = $row['name'];
+         header('location:user_historybuff.php');
       }
      
    }else{
