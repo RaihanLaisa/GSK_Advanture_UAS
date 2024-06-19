@@ -98,9 +98,7 @@ if(!isset($_SESSION['user_name']))
         </video>
         <div class="intro">
           <h3>Visit Gresik</h3>
-          <p>
-            Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.
-          </p>
+          <p>Gresik terletak sekitar 20 km barat laut dari Surabaya dan termasuk dalam wilayah metropolitan Surabaya.</p>
 
           
         <!-- ABOUT US -->
@@ -158,10 +156,9 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 1 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/2.png" class="card-img-top" alt="1 Hari">
+                    <img src="asset/Giri kedaton potong.png" class="card-img-top" alt="1 Hari">
                     <div class="card-body">
-                        <h3>1 Hari</h3>
-                        <p>Wisata Bukit Kapur Gosari, Klenteng Kim Hin, dan Bajak Laut!</p>
+                        <h3>Giri Kedaton</h3>
                         <div class="star">
                             <i class="fa-solid fa-star checked"></i>
                             <i class="fa-solid fa-star checked"></i>
@@ -180,11 +177,9 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 2 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/2 hari.png" class="card-img-top" alt="2 Hari">
+                    <img src="asset/makamsunan.jpg" class="card-img-top" alt="2 Hari">
                     <div class="card-body">
-                        <h3>2 Hari</h3>
-                        <p>Hari Pertama: Bukit Jamur dan Pulau Mangare</p>
-                        <p>Hari Kedua: Wagos wisata alam dan Pantai</p>
+                        <h3>Makam Sunan Giri</h3>
                         <div class="star">
                             <i class="fa-solid fa-star checked"></i>
                             <i class="fa-solid fa-star checked"></i>
@@ -192,7 +187,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>500.000</strong></h6>
+                        <h6>Price: <strong>200.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
                             See Now
@@ -203,12 +198,9 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 3 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                <img src="asset/3.png" class="card-img-top" alt="3 Hari">
+                <img src="asset/sitifatimah.jpg" class="card-img-top" alt="3 Hari">
                     <div class="card-body">
-                        <h3>3 Hari</h3>
-                        <p>Hari Pertama: Banyu Urip dan Telaga Ngipik</p>
-                        <p>Hari Kedua: Bukit Kapur dan Pantai Karang Kering</p>
-                        <p>Hari Ketiga: Makam Sunan Giri alam dan Dynasty Water World</p>
+                        <h3>Makam Siti Fatimah binti Maimun</h3>
                         <div class="star">
                             <i class="fa-solid fa-star checked"></i>
                             <i class="fa-solid fa-star checked"></i>
@@ -216,54 +208,107 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>700.000</strong></h6>
+                        <h6>Price: <strong>150.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
                             See Now
                         </button>
                     </div>
-               
+                    </div>
+                    </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/masjidagung.jpg" class="card-img-top" alt="2 Hari">
+                    <div class="card-body">
+                        <h3>Masjid Agung</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>100.000</strong></h6>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                            See Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/Masjid KH Ahmad Dahlan.png" class="card-img-top" alt="1 Hari">
+                    <div class="card-body">
+                        <h3>Masjid KH Ahmad Dahlan</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>100.000</strong></h6>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                            See Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 py-3">
+                <div class="card">
+                    <img src="asset/bajak.jpg" class="card-img-top" alt="2 Hari">
+                    <div class="card-body">
+                        <h3>Masjid Sunan Giri</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h6>Price: <strong>250.000</strong></h6>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                            See Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
 
         <!-- Modal 1 -->
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="asset/Bukit Kapur Gosari.jpg" class="img-thumbnail" alt="1 Hari">
+                        <img src="asset/hutan.jpeg" class="img-thumbnail" alt="1 Hari">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                             
-                              <strong>1. Bukit Kapur Gosari</strong>
-                             <ul>
-                            Lokasi: Gosari, Gresik, Jawa Timur
-                            <li>Tiket Masuk: Sekitar Rp 5.000 - Rp 10.000 per orang</li>
-                        </ul>
-
-                      
-                  <strong>2. Klenteng Kim Hin</strong>
-                  <ul>
-                      Lokasi: Jl. A. Yani No. 93, Gresik, Jawa Timur</li>
-                      <li>Tiket Masuk: Biasanya gratis, namun sumbangan sukarela dapat diberikan</li>
-                  </ul>
-                            
-                 <strong>3. Bajak Laut</strong>
-                  <ul>
-                    Lokasi: Gresik, Jawa Timur</li>
-                      <li>Tergantung pada atraksi yang ingin dinikmati, rata-rata sekitar Rp 10.000 - Rp 20.000 per orang</li>
-                  </ul>
-                          
-                  <li> <strong>Transportasi</strong>
-                         Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
-                        </ul>
-                        <p>Perhatikan Keadaan Cuaca dan Jam Buka</p>
-                        <ul>
-                            <li>Untuk ketiga wisata buka pukul 08.00-17.00 WIB.</li>
-                        </ul>
+                    <p>Kedaton (istana) atau pusat pemerintahan era Giri I yaitu Sunan Giri atau Raden Paku atau Raden Ainul Yaqin yang diteruskan secara turun temurun oleh para keturunannya. Giri Kedaton didirikan oleh Sunan Giri pada sekitar tahun 1487 M di Kota Gresik. Dipilihnya lokasi tersebut sebagai Kedaton Giri berdasarkan petunjuk Syeck Maulana Iskhak (Ayah Sunan Giri) atas dasar kes amaan segenggam tanah yang dibawa dari Samudra Pasai. </p>
+                             <div class="box-above">
+                                Harga Tiket : Rp 0 (gratis)
+                            </div>
+                            <div class="box-above">
+                            Jam Buka : Setiap hari 24 jam
+                            </div>
+                            <div class="box-above">
+                            Lokasi : Jl. Sunan Giri XIII, Pedukuhan, Kebomas, Kec. Kebomas, Kabupaten Gresik, Jawa Timur 61124, Indonesia
+                            </div>
+                        </div>
                     </div>
-
+                </div>
+            </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
@@ -276,7 +321,7 @@ if(!isset($_SESSION['user_name']))
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <img src="asset/Wagos Wisata Alam Gosari.jpg" class="img-thumbnail" alt="2 Hari">
+                        <img src="asset/ngipik.jpeg" class="img-thumbnail" alt="2 Hari">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -287,45 +332,20 @@ if(!isset($_SESSION['user_name']))
                     </div>
                     <div class="modal-footer">
                     <div class="modal-body">
-                    <strong>Hari Pertama</strong></ul>
-                    <strong>1. Bukit Jamur</strong>
-                             <ul>
-                            Lokasi: Bungah, Gresik, Jawa Timur
-                            <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
-                        </ul>
-
-                  <strong>2. Pulau Mangare</strong>
-                  <ul>
-                      Lokasi: Gresik, Jawa Timur</li>
-                      <li>Tiket Masuk: Sekitar Rp 20.000 per orang</li>
-                  </ul>
-                   
-                  <strong>Hari Kedua</strong> </ul>
-                 <strong>1. Wagos Wisata</strong>
-                  <ul>
-                    Lokasi: Gresik, Jawa Timur</li>
-                      <li>Tiket Masuk: Sekitar Rp 15.000 per orang</li>
-                  </ul>
-                  <strong>2.Pantai</strong>
-                  <ul>
-                      Lokasi: Gresik, Jawa Timur</li>
-                      <li>Tiket Masuk: Sekitar Rp 10.000 per orang</li>
-                  </ul>
-
-                  <li> <strong>Transportasi</strong>
-                         Anda dapat menggunakan mobil pribadi, taksi, atau menyewa mobil untuk perjalanan dari lokasi Anda ke destinasi wisata. Untuk transportasi lokal di sekitar destinasi, mungkin tersedia ojek atau angkutan umum.</li>
-                        </ul>
-                        <p>Perhatikan Keadaan Cuaca dan Jam Buka</p>
-                        <ul>
-                            <li>Wisata buka pukul 08.00-17.00 WIB.</li>
-                        </ul>
-                    </div>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <p>Salah satu wujud dari solusi pelestarian lingkungan hidup adalah pada sekitar tahun 2002 lubang raksasa tersebut dijadikan sebagai telaga yang bermanfaat bagi masyarakat luas. Sejak saat itu masyarakat dapat memancing ikan di pinggiran danau dengan duduk santai di bawah rerimbunan pohon penghijauan. Di Taman Bermain itu sudah ada Komunitas Mancing Mania, serta ada hiburan musik yang digelar pada hari-hari tertentu. Bagi mereka yang suka berfoto-foto di sini juga tersedia pemandangan danau yang sangat bagus. Warga juga bisa berwisata dengan naik perahu motor yang bisa menampung antara 10-12 orang.</p>
+                            <div class="box-above">
+                            Harga Tiket : Rp 0 (gratis)
+                            </div>
+                            <div class="box-above">
+                            Jam Buka : Setiap hari 24 jam
+                            </div>
+                            <div class="box-above">
+                            Lokasi : Jarangkuwung, Ngipik, Kec. Gresik, Kabupaten Gresik, Jawa Timur 61151
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
  <!-- Modal 3 -->
  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">

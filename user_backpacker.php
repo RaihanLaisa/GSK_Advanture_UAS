@@ -187,7 +187,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>500.000</strong></h6>
+                        <h6>Price: <strong>50.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
                             See Now
@@ -208,7 +208,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>700.000</strong></h6>
+                        <h6>Price: <strong>250.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
                             See Now
@@ -229,7 +229,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>500.000</strong></h6>
+                        <h6>Price: <strong>55.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
                             See Now
@@ -251,7 +251,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>300.000</strong></h6>
+                        <h6>Price: <strong>50.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
                             See Now

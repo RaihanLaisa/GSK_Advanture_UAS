@@ -198,7 +198,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 3 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                <img src="asset/Pulau Mengare.jpg" class="card-img-top" alt="3 Hari">
+                <img src="asset/pulaumengare.jpg" class="card-img-top" alt="3 Hari">
                     <div class="card-body">
                         <h3>Pulau Mengare</h3>
                         <div class="star">
@@ -219,7 +219,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 4 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/bukitjamurbaru.jpg" class="card-img-top" alt="2 Hari">
+                    <img src="asset/kolamawan.jpg" class="card-img-top" alt="2 Hari">
                     <div class="card-body">
                         <h3>Bukit Awan</h3>
                         <div class="star">
@@ -229,7 +229,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>500.000</strong></h6>
+                        <h6>Price: <strong>100.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
                             See Now
@@ -241,7 +241,7 @@ if(!isset($_SESSION['user_name']))
             <!-- Card 5 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/Bukit Kapur Sekapuk.jpg" class="card-img-top" alt="1 Hari">
+                    <img src="asset/dynastywaterworld.jpg" class="card-img-top" alt="1 Hari">
                     <div class="card-body">
                         <h3>Dynasty Water World</h3>
                         <div class="star">
@@ -251,7 +251,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>300.000</strong></h6>
+                        <h6>Price: <strong>150.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
                             See Now
@@ -260,12 +260,12 @@ if(!isset($_SESSION['user_name']))
                 </div>
             </div>
 
-            <!-- Card 5 -->
+            <!-- Card 6 -->
             <div class="col-md-4 py-3">
                 <div class="card">
-                    <img src="asset/ngipik.jpeg" class="card-img-top" alt="2 Hari">
+                    <img src="asset/bajak.jpg" class="card-img-top" alt="2 Hari">
                     <div class="card-body">
-                        <h3>Pantai Delegan</h3>
+                        <h3>Bajak Laut</h3>
                         <div class="star">
                             <i class="fa-solid fa-star checked"></i>
                             <i class="fa-solid fa-star checked"></i>
@@ -273,7 +273,7 @@ if(!isset($_SESSION['user_name']))
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <h6>Price: <strong>500.000</strong></h6>
+                        <h6>Price: <strong>100.000</strong></h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
                             See Now
